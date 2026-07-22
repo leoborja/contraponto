@@ -1,0 +1,45 @@
+{
+  "podcast": "Contraponto",
+  "episodes": [
+    {
+      "slug": "2026-07-22-renda-basica-universal",
+      "titulo": "Dinheiro pra todo mundo? O debate da renda básica",
+      "tema": "Renda Básica Universal",
+      "data": "2026-07-22",
+      "duracao_seg": 533,
+      "audio": "episodes/2026-07-22-renda-basica-universal/podcast.mp3",
+      "tese_esquerda": "Com a automação ameaçando ~60% dos empregos formais e a desigualdade crescendo, uma renda incondicional é um piso de dignidade: dá segurança, reduz pobreza e libera as pessoas para empreender e estudar — e os pilotos indicam que o desincentivo ao trabalho é pequeno.",
+      "tese_direita": "Uma renda universal e incondicional custa caro demais (até ~1/8 do PIB na versão generosa), reduz o incentivo ao trabalho — efeito visível nos maiores pilotos — e desperdiça recursos ao pagar até para quem não precisa; melhor focalizar em quem está embaixo.",
+      "consenso": [
+        "A automação/IA vai concentrar riqueza e transformar o trabalho — os dois lados reconhecem o problema (inclusive o MBL admite a concentração).",
+        "Quem está na pobreza extrema precisa de ajuda direta em dinheiro; ninguém defende manter como está.",
+        "O desenho importa mais que o rótulo: valor, financiamento e se soma ou substitui programas mudam completamente o resultado.",
+        "Transferência de renda focalizada (tipo Bolsa Família) tem valor comprovado; a briga é sobre universalidade e valor."
+      ],
+      "perguntas_abertas": [
+        "A IA vai destruir empregos mais rápido do que cria, desta vez, ou será como as revoluções anteriores?",
+        "Pilotos pequenos e temporários preveem o comportamento sob um programa nacional e permanente?",
+        "Como financiar de forma sustentável sem depender de royalties de petróleo (Maricá é caso especial)?",
+        "Universal ou focalizado entrega mais dignidade por real gasto?"
+      ],
+      "fontes": [
+        {
+          "titulo": "The Daily Economy — 122 UBI experiments (cético)",
+          "url": "https://thedailyeconomy.org/article/what-122-universal-basic-income-experiments-actually-show/"
+        },
+        {
+          "titulo": "Minneapolis Fed — one year of basic income",
+          "url": "https://www.minneapolisfed.org/article/2024/one-year-of-basic-income-in-minneapolis"
+        },
+        {
+          "titulo": "UFF — avaliação da RBC de Maricá",
+          "url": "https://www.uff.br/11-12-2024/pesquisa-da-uff-publica-avaliacao-do-programa-de-renda-basica-de-marica/"
+        },
+        {
+          "titulo": "Berkeley Economic Review — Unboxing UBI",
+          "url": "https://econreview.studentorg.berkeley.edu/unboxing-universal-basic-income/"
+        }
+      ]
+    }
+  ]
+}

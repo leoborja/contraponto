@@ -1,0 +1,48 @@
+# Configuração geral do pipeline de podcast
+
+idioma: pt-BR
+
+# Modelos por estágio (workhorse = sonnet; escrita/crítica = opus)
+models:
+  research:   claude-sonnet-4-6
+  synthesize: claude-sonnet-4-6
+  script:     claude-opus-4-8
+  review:     claude-opus-4-8
+  summary:    claude-sonnet-4-6
+
+# Alvo do roteiro (10-15 min ≈ 150 palavras/min em PT-BR)
+roteiro:
+  palavras_min: 1500
+  palavras_max: 2200
+  palavras_por_minuto: 150   # só p/ estimar duração
+
+# Pesquisa
+pesquisa:
+  max_buscas_por_angulo: 5   # web_search.max_uses por ângulo
+  angulos:                   # o leque; a ordem vira a ordem no research.json
+    - factual
+    - esquerda
+    - direita
+    - criticas
+  youtube:                   # YouTube como fonte (via ferramenta guru)
+    ativo: true
+    num_queries: 3           # inclui obrigatoriamente 1 query cética
+    resultados_por_query: 8
+    max_videos: 4            # quantos transcrever (diversidade + cadeira do cético)
+    timeout_transcricao: 90  # seg; estoura em vídeo sem legenda (pula Whisper lento)
+    auditar_comentarios: true
+    comentarios: 20
+
+# Revisor: quantas rodadas de melhora no máximo
+review:
+  max_rodadas: 2
+  # abaixo desses scores (0-10) o revisor força outra rodada
+  min_equilibrio: 7
+  min_ouvido: 7
+  min_factual: 8
+
+# ElevenLabs
+audio:
+  model_id: eleven_multilingual_v2
+  output_format: mp3_44100_128
+  pausa_entre_turnos_ms: 350

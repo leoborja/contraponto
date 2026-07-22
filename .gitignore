@@ -1,0 +1,11 @@
+# Segredos — NUNCA versionar
+.env
+
+# Pasta de trabalho (artefatos brutos por episódio); o que vai pro site fica em docs/
+output/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
