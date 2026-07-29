@@ -10,11 +10,15 @@ models:
   review:     claude-opus-4-8
   summary:    claude-sonnet-4-6
 
-# Alvo do roteiro (10-15 min ≈ 150 palavras/min em PT-BR)
+# Alvo do roteiro — vozes ElevenLabs PT-BR falam ~165 palavras/min (calibrado no ep. 1)
 roteiro:
-  palavras_min: 1500
+  palavras_por_minuto: 165
+  modos:
+    simples:   { palavras_min: 1700, palavras_max: 2200 }   # ~10-13 min
+    profundo:  { palavras_min: 4200, palavras_max: 5000 }   # ~25-30 min
+  # retrocompat (modo simples)
+  palavras_min: 1700
   palavras_max: 2200
-  palavras_por_minuto: 150   # só p/ estimar duração
 
 # Pesquisa
 pesquisa:
