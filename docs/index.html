@@ -67,9 +67,9 @@
   #p-seek{width:100%;height:26px;appearance:none;background:transparent;cursor:pointer;display:block}
   #p-seek::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--esq) var(--fill,0%),#333a48 var(--fill,0%))}
   #p-seek::-webkit-slider-thumb{appearance:none;width:18px;height:18px;border-radius:50%;background:#fff;margin-top:-6px}
-  .p-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:2px}
-  .p-time{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:86px}
-  .p-time.right{text-align:right}
+  .p-times{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);
+           font-variant-numeric:tabular-nums;margin:-4px 2px 6px}
+  .p-controls{display:flex;align-items:center;justify-content:center;gap:14px}
   .p-btn{border:none;background:var(--card2);color:var(--txt);border-radius:50%;cursor:pointer;
          display:flex;align-items:center;justify-content:center;flex-direction:column;transition:transform .1s}
   .p-btn:active{transform:scale(.92)}
@@ -77,7 +77,6 @@
   #p-back span.ic,#p-fwd span.ic{font-size:19px;line-height:1}
   #p-play{width:74px;height:74px;background:var(--esq);color:#fff;font-size:30px}
   #p-speed{width:58px;height:58px;font-size:14.5px;font-weight:700;border-radius:50%}
-  .spacer{flex:1;max-width:8px}
 </style>
 </head>
 <body>
@@ -91,15 +90,12 @@
   <div class="inner">
     <div id="p-title"></div>
     <input id="p-seek" type="range" min="0" max="100" step="0.1" value="0">
+    <div class="p-times"><span id="p-cur">0:00</span><span id="p-dur">-0:00</span></div>
     <div class="p-controls">
-      <div class="p-time" id="p-cur">0:00</div>
       <button class="p-btn" id="p-back" title="voltar 15s"><span class="ic">↺</span>15</button>
-      <div class="spacer"></div>
       <button class="p-btn" id="p-play" title="play/pause">▶</button>
-      <div class="spacer"></div>
       <button class="p-btn" id="p-fwd" title="avançar 30s"><span class="ic">↻</span>30</button>
       <button class="p-btn" id="p-speed" title="velocidade">1×</button>
-      <div class="p-time right" id="p-dur">0:00</div>
     </div>
   </div>
 </div>
