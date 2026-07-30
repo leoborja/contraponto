@@ -2,6 +2,78 @@
   "podcast": "Contraponto",
   "episodes": [
     {
+      "slug": "2026-07-29-modelo-bukele",
+      "titulo": "O modelo Bukele: segurança a qualquer preço?",
+      "tema": "O modelo Bukele: segurança a qualquer preço?",
+      "data": "2026-07-29",
+      "duracao_seg": 1693,
+      "audio": "episodes/2026-07-29-modelo-bukele/podcast.mp3",
+      "tese_esquerda": "A queda da violência é real, mas parte dela nasceu de um pacto secreto com as gangues — e o preço do regime de exceção (8.000 inocentes presos, 350+ mortos na custódia, corte demitida, reeleição indefinida) é uma armadilha que fica armada: montada pro ladrão, um dia dispara em quem o dono quiser. No Brasil, prisão em massa sem controle já foi testada — e fundou o CV e o PCC. O caminho é instituição, não messias: asfixia financeira, controle prisional real e repressão cirúrgica.",
+      "tese_direita": "106 → 1,4 homicídios por 100 mil: milhares de pobres vivos por ano. Segurança é a primeira liberdade (Hobbes) — sem o monopólio estatal da violência, nenhum direito existe; e quem pedia o modelo era o pobre extorquido. O mecanismo não é 'prender muito', é o controle total pós-prisão (fim do QG carcerário). Mas o apoio tem fronteira: o capítulo 2 (corte demitida, reeleição sem limite) não é segurança, é um homem removendo os freios — e liberal de verdade recusa o presidente vitalício.",
+      "consenso": [
+        "Segurança é direito — e a falta dela pesa primeiro sobre o pobre. A esquerda que tratou o tema como menor entregou a bandeira; a direita que só tem essa bandeira a transformou em porrete.",
+        "O Estado não pode dividir soberania com facção — nem no presídio, nem no morro, nem no porto. Ninguém defendeu a convivência que o Brasil normalizou.",
+        "Prisão sem controle é fábrica de facção: a mano dura de 2003 e os presídios que fundaram CV/PCC contam a mesma história.",
+        "A foto não viaja: Honduras e Equador copiaram a imagem sem o mecanismo e falharam. Quem promete CECOT sem falar de porto, celular de presídio e batalhão comprado vende cenografia.",
+        "A lei pune a armadilha de Formosa com razão: violência legítima exige juízo humano e proporção — mesmo contra o criminoso."
+      ],
+      "perguntas_abertas": [
+        "A paz salvadorenha sobrevive ao dia em que a popularidade do dono cair?",
+        "Dá pra ter o capítulo 1 (retomada do monopólio da violência) sem o capítulo 2 (o trono)?",
+        "Quando 85% apoiam a armadilha, quem sobra pra perguntar em quem mais ela vai disparar?"
+      ],
+      "fontes": [
+        {
+          "titulo": "El Faro — Bukele negociou com a MS-13 (a investigação do pacto)",
+          "url": "https://elfaro.net/en/202009/el_salvador/24785/Bukele-Has-Been-Negotiating-with-MS-13-for-a-Reduction-in-Homicides-and-Electoral-Support.htm"
+        },
+        {
+          "titulo": "HRW/Cristosal — 'We Can Arrest Anyone We Want'",
+          "url": "https://www.hrw.org/report/2022/12/07/we-can-arrest-anyone-we-want/widespread-human-rights-violations-under-el"
+        },
+        {
+          "titulo": "British Journal of Criminology — Mano Dura vs trégua (efeitos causais)",
+          "url": "https://academic.oup.com/bjc/article/66/3/613/8196003"
+        },
+        {
+          "titulo": "WOLA — 3 anos de regime de exceção: encarceramento em massa e deterioração democrática",
+          "url": "https://www.wola.org/analysis/mass-incarceration-and-democratic-deterioration-three-years-of-the-state-of-exception-in-el-salvador/"
+        },
+        {
+          "titulo": "CRS (Congresso dos EUA) — El Salvador's State of Exception",
+          "url": "https://www.congress.gov/crs_external_products/IN/HTML/IN12510.web.html"
+        },
+        {
+          "titulo": "Anistia — mil dias de regime de exceção",
+          "url": "https://www.amnesty.org/en/latest/news/2024/12/el-salvador-mil-dias-regimen-excepcion-modelo-seguridad-a-costa-derechos-humanos/"
+        },
+        {
+          "titulo": "El Ciudadano — o fracasso do modelo no Equador e em Honduras",
+          "url": "https://www.elciudadano.com/en/the-illusion-of-iron-fist-the-failure-of-bukeles-model-in-ecuador-and-honduras-reveals-the-risks-of-exporting-mega-prisons-without-judicial-guarantees/06/24/"
+        },
+        {
+          "titulo": "HRW — El Salvador's Democracy Is Dying (reeleição indefinida)",
+          "url": "https://www.hrw.org/news/2025/09/02/el-salvadors-democracy-is-dying"
+        },
+        {
+          "titulo": "Lupa — 'Vamos bukelizar o Brasil': a aposta da direita em 2026",
+          "url": "https://www.agencialupa.org/reportagem/2026/01/21/vamos-bukelezar-o-brasil-politica-de-bukele-vira-aposta-da-direita-em-2026/"
+        },
+        {
+          "titulo": "CNN Brasil — como nasceram PCC e CV (dentro dos presídios)",
+          "url": "https://www.cnnbrasil.com.br/nacional/brasil/pcc-e-cv-como-surgiram-faccoes-agora-consideradas-terroristas-pelos-eua/"
+        },
+        {
+          "titulo": "Caso Formosa-GO — ladrão morre em armadilha; dono responde por homicídio",
+          "url": "https://www.gazetadopovo.com.br/vida-e-cidadania/ladrao-invade-casa-aciona-armadilha-e-morre-baleado-bx4uibj06exnnmowelenuwmdq/"
+        },
+        {
+          "titulo": "Migalhas — limites legais dos ofendículos",
+          "url": "https://www.migalhas.com.br/depeso/241716/limites-legais-dos-ofendiculos"
+        }
+      ]
+    },
+    {
       "slug": "2026-07-22-renda-basica-universal",
       "titulo": "Renda Básica Universal: o dossiê completo",
       "tema": "Renda Básica Universal",
