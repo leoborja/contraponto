@@ -1,70 +1,49 @@
-# Podcast de Debate 🎙️
+# Contraponto 🎙️
 
-Você escolhe um tema (uma lei em debate, uma política econômica, um projeto de
-cidade) e a ferramenta pesquisa em várias fontes de diferentes posicionamentos,
-monta um **debate entre dois apresentadores** que discordam (esquerda × direita)
-com um narrador neutro, revisa a si mesma e gera um **áudio de 10–15 min** pra
-você ouvir na academia.
+**https://contraponto.leoborja.com.br**
 
-## Fluxo
+Podcast de debate político gerado por IA. Cada episódio pega um tema em disputa (uma lei, uma política econômica, um modelo de país) e monta um **debate profundo de ~25-30 min** entre dois personagens que discordam de verdade — Karl Marx (esquerda) e Milton Friedman (direita) — mediados por Sócrates, que ensina o tema antes do debate e fecha com **onde os dois concordam** e **quais perguntas seguem abertas**.
+
+## Como funciona
 
 ```
-tema → pesquisa → síntese → roteiro → revisa → melhora → RESUMO (você aprova)
-                                                              ↓
-                                                    --audio → ElevenLabs → MP3
+tema → pesquisa multi-fonte (web PT/EN + YouTube, com "cadeira do cético")
+     → curriculum.json (o que um especialista sabe)
+     → roteiro pro ouvido (3 vozes, debate eixo-por-eixo)
+     → revisão (equilíbrio · factual · ouvido · profundidade + ponto-cego)
+     → áudio ElevenLabs multi-voz → publicação no site
 ```
 
-Cada estágio salva seu resultado em `output/<data>-<slug>/`. O áudio (que consome
-crédito do ElevenLabs) só roda quando você aprova o resumo.
+- **Pesquisa e escrita**: Claude (na sessão do Claude Code)
+- **Vozes**: ElevenLabs `eleven_multilingual_v2`, 3 vozes PT-BR
+- **Site**: GitHub Pages (`docs/`) com player mobile-first — posição salva por episódio, ±15/30s, velocidade, controles na tela de bloqueio
 
-A pesquisa cruza **web + YouTube**: além das buscas por ângulo, usa a ferramenta
-`guru` (`/Users/leoborja/guru`) pra buscar vídeos, transcrever (caption-first) e
-auditar comentários — com uma "cadeira do cético" obrigatória (sempre ≥1 fonte que
-contradiz a tese dominante). Vídeo entra como relato de criador, nunca fonte única.
-Desligável em `config/settings.yaml` (`pesquisa.youtube.ativo: false`).
+## Princípios editoriais
 
-## Setup
+- **Steel-man dos dois lados**: cada personagem usa as posições reais dos pensadores (o Friedman do podcast inventou o voucher e o imposto de renda negativo, como o real)
+- **Evidência com nome e sobrenome**: todo eixo cita estudos e números verificáveis; as fontes ficam no card de cada episódio
+- **A discordância sobrevive**: concessões só depois de pushback; o fecho mapeia consenso real e desacordo real — sem falso equilíbrio nem falsa síntese
+- **"Que dado te faria mudar de ideia?"** — ritual de todo episódio
 
-```bash
-python3.12 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env          # preencha ANTHROPIC_API_KEY e ELEVENLABS_API_KEY
-brew install ffmpeg           # necessário pra montar o MP3 (pydub)
-```
+## Estrutura do repo
 
-Depois, edite `config/personas.yaml` e cole os `voice_id` das três vozes
-(narrador + 2 hosts) da sua conta ElevenLabs.
-
-## Uso
-
-```bash
-# Etapa 1 — pesquisa e roteiro (imprime o resumo pra você aprovar)
-python podcast.py "reforma tributária 2026: IVA dual"
-
-# leia o resumo; se curtir, gere o áudio:
-python podcast.py --audio output/2026-07-22-reforma-tributaria-2026-iva-dual
-```
-
-## Estrutura
-
-| Arquivo | Papel |
+| Caminho | Papel |
 |---|---|
-| `podcast.py` | CLI que orquestra os estágios |
-| `pipeline/research.py` | pesquisa multi-ângulo (factual/esquerda/direita/críticas) + verificação adversarial |
-| `pipeline/youtube.py` | YouTube como fonte via `guru`: busca, transcreve e audita comentários (cadeira do cético) |
-| `pipeline/synthesize.py` | mapa do debate: teses, tensões, consensos, perguntas abertas |
-| `pipeline/script.py` | roteiro escrito pro ouvido, 3 vozes |
-| `pipeline/review.py` | revisor (equilíbrio/factual/ouvido) + melhoria |
-| `pipeline/summary.py` | resumo pra aprovação |
-| `pipeline/audio.py` | ElevenLabs multi-voz + montagem do MP3 |
-| `config/settings.yaml` | modelos, alvo de palavras, ângulos, thresholds do revisor |
-| `config/personas.yaml` | nomes, `voice_id` e temperamento das vozes |
+| `CLAUDE.md` | **Runbook completo** — como gerar um episódio do zero |
+| `podcast.py` + `pipeline/` | CLI e módulos (áudio/TTS com normalização, YouTube via guru, utilitários) |
+| `config/` | vozes/personas e calibrações |
+| `scripts/publish.py` | publica episódios de `output/` para `docs/` |
+| `scripts/custo.py` | consumo ElevenLabs do mês por voz |
+| `docs/` | o site (Pages): player, manifesto de episódios, MP3s, logo |
+| `branding/` | conceitos de logo (Gemini/Nano Banana Pro) |
+| `output/` | artefatos por episódio (pesquisa, currículo, roteiro, revisão) — não versionado |
 
-## Artefatos por episódio (`output/<data>-<slug>/`)
+## Rodar
 
-- `research.json` — pesquisa bruta com fontes citadas
-- `debate_map.json` — o mapa do debate
-- `script.json` / `script.md` — roteiro final (json p/ áudio, md p/ ler)
-- `review.json` — histórico de críticas e scores
-- `summary.md` — o resumo que você aprova
-- `podcast.mp3` — o episódio (após `--audio`)
+```bash
+cp .env.example .env          # ELEVENLABS_API_KEY
+pip install -r requirements.txt && brew install ffmpeg
+# geração de episódio: ver CLAUDE.md (o motor de pesquisa/escrita é o Claude Code)
+python podcast.py --audio output/<episodio>   # roteiro → MP3
+python scripts/publish.py                     # → docs/ → git push publica
+```
