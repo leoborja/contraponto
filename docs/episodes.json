@@ -2,6 +2,82 @@
   "podcast": "Contraponto",
   "episodes": [
     {
+      "slug": "2026-07-30-educacao-publica-privada",
+      "titulo": "Educação: pública, privada, e quem paga a conta",
+      "tema": "Educação: pública, privada, e quem paga a conta",
+      "data": "2026-07-30",
+      "duracao_seg": 1654,
+      "audio": "episodes/2026-07-30-educacao-publica-privada/podcast.mp3",
+      "tese_esquerda": "A escola comum é a instituição fundadora da cidadania, e 70 anos de vouchers provam: onde o mercado rodou solto (Chile, Louisiana, Suécia) deu segregação sem aprendizado — a vantagem da privada some controlando renda. Sobral mostra o caminho: escola estatal de pobre pode ser a 1ª do país com Estado forte, alfabetização na idade certa, professor valorizado e gestão profissional. Prioridade: recurso novo maciço na base (novo Fundeb) pago por imposto progressivo, mantendo a gratuidade universal como muralha.",
+      "tese_direita": "O Estado deve FINANCIAR educação, não precisa OPERAR escolas (Friedman 1955): o sistema atual já é um mercado onde só o rico escolhe. Chile e Louisiana condenam o desenho, não a escolha: a Holanda (70% de escolas privadas, 100% de verba pública, regulação dura) funciona há um século. Dinheiro importa (concedido, Jackson), mas o escândalo brasileiro é gastar ao contrário: 3x mais no superior que na base, FIES maior que o reforço ao Fundeb. Sobral venceu com mecanismos de accountability: mérito, avaliação e consequência.",
+      "consenso": [
+        "A pergunta 'pública ou privada' está mal feita: as perguntas certas são quem paga, quem opera, e sob quais regras.",
+        "Dinheiro importa (ciência fechada) E gestão importa. Não é ou, é e.",
+        "Escola que escolhe aluno não ensina melhor, trapaceia o placar. É a regra de ouro que separa a Holanda do Chile.",
+        "A inversão brasileira é indefensável pelos dois lados: 3x mais por universitário que por criança, e FIES custando mais que o reforço federal à básica. Prioridade absoluta de recurso novo: a base.",
+        "Sobral é o consenso nacional: público, pobre e 1º lugar, com mérito na gestão e obsessão pela alfabetização. Cada lado reivindica metade da receita, e a receita não liga."
+      ],
+      "perguntas_abertas": [
+        "Cobrar mensalidade de quem pode no superior público, ou proteger a gratuidade universal como muralha contra o desfinanciamento?",
+        "A escolha regulada à holandesa sobreviveria num Brasil de fiscalização frágil?",
+        "O que a inteligência artificial faz com a sala de aula nos próximos dez anos?"
+      ],
+      "fontes": [
+        {
+          "titulo": "OCDE — Public and Private Schools: a vantagem privada e o nível socioeconômico",
+          "url": "https://www.oecd.org/en/publications/public-school-private-school_9789264175006-en.html"
+        },
+        {
+          "titulo": "ScienceDirect — segregação e cream-skimming no voucher chileno",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0047272724001129"
+        },
+        {
+          "titulo": "Education Next — os vouchers de Louisiana e Indiana (efeitos negativos)",
+          "url": "https://www.educationnext.org/school-voucher-programs-indiana-louisiana/"
+        },
+        {
+          "titulo": "Jackson — Does School Spending Matter? (a literatura causal)",
+          "url": "https://sesp.northwestern.edu/docs/faculty/jackson-does-school-spending-matter.pdf"
+        },
+        {
+          "titulo": "Governo holandês — financiamento igual de escolas públicas e privadas (art. 23)",
+          "url": "https://www.government.nl/themes/education/freedom-of-education/public-authority-and-private-schools"
+        },
+        {
+          "titulo": "Sanandaji/IFN — a crise sueca não foi causada pela escolha escolar (contraponto)",
+          "url": "https://www.ifn.se/media/hmhphujb/2014-sanandaji-sweden-has-an-education-crisis-but-it-wasn-t-caused-by-school-choice.pdf"
+        },
+        {
+          "titulo": "Slate — o desastre sueco com vouchers (acusação)",
+          "url": "https://slate.com/news-and-politics/2014/07/sweden-school-choice-the-countrys-disastrous-experiment-with-milton-friedman-and-vouchers.html"
+        },
+        {
+          "titulo": "FEA-USP — os efeitos da reforma de Sobral duas décadas depois",
+          "url": "https://www.fea.usp.br/fea/noticias/os-efeitos-da-reforma-educacional-de-sobral-duas-decadas-depois"
+        },
+        {
+          "titulo": "Banco Mundial — o Ceará como modelo de redução da pobreza de aprendizagem",
+          "url": "https://documents1.worldbank.org/curated/en/200981594196175640/pdf/The-State-of-Ceara-in-Brazil-is-a-Role-Model-for-Reducing-Learning-Poverty.pdf"
+        },
+        {
+          "titulo": "Banco Mundial — o ICMS por resultados do Ceará (guia de implementação)",
+          "url": "https://documents1.worldbank.org/curated/en/354741606111551682/pdf/Implementing-a-Results-Based-Financing-Mechanism-for-Subnational-Governments-to-Improve-Education-Outcomes-An-Implementation-Guide-Inspired-by-the-Case-of-Ceara-Brazil.pdf"
+        },
+        {
+          "titulo": "Education Next — o ensaio de Friedman de 1955",
+          "url": "https://www.educationnext.org/milton-friedmans-foresight-role-of-government-in-education-essay/"
+        },
+        {
+          "titulo": "Scielo — ProUni e FIES como financiadores do setor privado",
+          "url": "http://www.scielo.br/j/edur/a/jZMkgMgTyb7rmjtqTVczXBj/?lang=pt"
+        },
+        {
+          "titulo": "Banco Mundial — lições da reforma polonesa",
+          "url": "https://documents1.worldbank.org/curated/en/711041468093564484/pdf/622500BRI0Succ0Box0361475B00PUBLIC0.pdf"
+        }
+      ]
+    },
+    {
       "slug": "2026-07-29-modelo-bukele",
       "titulo": "O modelo Bukele: segurança a qualquer preço?",
       "tema": "O modelo Bukele: segurança a qualquer preço?",
