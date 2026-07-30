@@ -23,6 +23,9 @@ def normalizar_tts(text: str) -> str:
     vírgula; espaços/vírgulas duplicadas são colapsados.
     """
     t = text
+    t = re.sub(r"\.{3,}\s*", ". ", t)      # reticências → ponto (feedback ep.2: pausa ruim)
+    t = re.sub(r"…\s*", ". ", t)
+    t = re.sub(r"\.\s+([a-záéíóúâêôãõç])", r". \1", t)  # não capitaliza; ElevenLabs lida bem
     t = re.sub(r"\s*—\s*", ", ", t)        # travessão → vírgula
     t = re.sub(r"\s*–\s*", ", ", t)        # en-dash idem
     t = re.sub(r",\s*,", ", ", t)          # vírgulas duplas
