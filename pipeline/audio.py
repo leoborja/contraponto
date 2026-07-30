@@ -8,10 +8,28 @@ from __future__ import annotations
 
 import io
 import os
+import re
 
 import requests
 
 _TTS_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
+
+
+def normalizar_tts(text: str) -> str:
+    """Limpa pontuação que quebra a entonação do ElevenLabs em PT-BR.
+
+    Lição do ep. 2 (Bukele): 75 travessões '—' produziram pausas robóticas e
+    entonação horrível. O ep. 1, sem nenhum, soou natural. Travessão vira
+    vírgula; espaços/vírgulas duplicadas são colapsados.
+    """
+    t = text
+    t = re.sub(r"\s*—\s*", ", ", t)        # travessão → vírgula
+    t = re.sub(r"\s*–\s*", ", ", t)        # en-dash idem
+    t = re.sub(r",\s*,", ", ", t)          # vírgulas duplas
+    t = re.sub(r"([.!?:])\s*,", r"\1 ", t)  # pontuação forte seguida de vírgula
+    t = re.sub(r",\s*([.!?])", r"\1", t)   # vírgula antes de ponto
+    t = re.sub(r"\s{2,}", " ", t)
+    return t.strip()
 
 
 def _tts(text: str, voice_id: str, voice_settings: dict, cfg: dict) -> bytes:
@@ -57,7 +75,7 @@ def generate(script: dict, personas: dict, cfg: dict, out_path: str) -> str:
                 f"voice_id não configurado para '{t['speaker']}' em config/personas.yaml"
             )
         print(f"  · áudio {i}/{len(turnos)} ({t['speaker']})")
-        audio_bytes = _tts(t["text"], persona["voice_id"], persona["voice_settings"], cfg)
+        audio_bytes = _tts(normalizar_tts(t["text"]), persona["voice_id"], persona["voice_settings"], cfg)
         seg = AudioSegment.from_file(io.BytesIO(audio_bytes), format="mp3")
         final += seg + pausa
 
