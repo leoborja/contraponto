@@ -2,6 +2,116 @@
   "podcast": "Contraponto",
   "episodes": [
     {
+      "slug": "2026-08-03-bilionarios",
+      "titulo": "Deveriam existir bilionários?",
+      "tema": "Deveriam existir bilionários?",
+      "data": "2026-08-03",
+      "duracao_seg": 2208,
+      "audio": "episodes/2026-08-03-bilionarios/podcast.mp3",
+      "tese_esquerda": "O bolo cresceu, mas a fatia nova foi quase toda para o mesmo lugar: desde 1980, o 0,1% mais rico capturou tanto crescimento quanto a metade mais pobre da humanidade inteira. Não é preciso provar soma zero para mostrar que a riqueza extrema é um problema. Basta ver que ela se converte em poder político não eleito (bilionários são 4.000x mais propensos a ocupar cargo público) e que o patrimônio no topo rende 7,5% ao ano enquanto paga 0,3% de imposto efetivo. A concentração não é um desvio do sistema: é o funcionamento dele.",
+      "tese_direita": "A defesa forte da riqueza extrema não é meritocrática, é de processo (Nozick): o padrão que aparece no fim é irrelevante se cada passo do caminho foi legítimo. E a evidência dá razão ao recorte: a riqueza de bilionários politicamente conectada arrasta o crescimento, mas a riqueza gerada em mercado não arrasta. O problema nunca foi o tamanho da fortuna, é a origem dela. Se o poder econômico compra o político, feche a loja em vez de confiscar o comprador.",
+      "consenso": [
+        "Herança dinástica é a forma de riqueza mais difícil de defender moralmente, e os dois lados chegam nisso por caminhos diferentes: herdeiro não compete.",
+        "Riqueza obtida por licença, concessão ou privatização faz mal ao crescimento, e isso é evidência medida, não opinião: no estudo de Bagchi e Svejnar, a riqueza politicamente conectada responde por quase todo o efeito negativo sobre o crescimento.",
+        "Ninguém desenharia do zero um sistema em que o patrimônio no topo rende 7,5% ao ano acima da inflação e paga 0,3% de imposto efetivo.",
+        "A linha internacional de pobreza é uma escolha política vestida de escolha técnica: ela é a mediana das linhas nacionais de 23 países de baixa renda, não uma medida de necessidade humana.",
+        "O progresso material é real e negá-lo é tão desonesto quanto ignorar a captura do crescimento: a mortalidade infantil caiu mais de 60% desde 1990 e não depende de nenhuma convenção estatística."
+      ],
+      "perguntas_abertas": [
+        "O problema é a altura da pilha, ou é a escada que foi usada para chegar lá?",
+        "Existe um teto ético à riqueza (Robeyns), ou qualquer teto é uma violação de liberdade?",
+        "O perigo é o bilionário ter poder demais, ou o Estado ter poder vendável demais?",
+        "Filantropia bilionária é bem público voluntário ou poder não eleito sem prestação de contas?",
+        "Por que sabemos o patrimônio do homem mais rico do mundo com precisão de bilhão, e o número de miseráveis com uma margem de 277 milhões de pessoas?"
+      ],
+      "fontes": [
+        {
+          "titulo": "CNBC — Musk becomes world's first trillionaire after SpaceX IPO (12/jun/2026)",
+          "url": "https://www.cnbc.com/2026/06/12/elon-musk-trillionaire-spacex.html"
+        },
+        {
+          "titulo": "Zucman — Blueprint para tributação mínima de ultra-ricos, encomendado pela presidência brasileira do G20",
+          "url": "https://gabriel-zucman.eu/files/report-g20.pdf"
+        },
+        {
+          "titulo": "Bagchi & Svejnar — Does wealth inequality matter for growth? (Journal of Comparative Economics)",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2363220"
+        },
+        {
+          "titulo": "Washington Post — Why some billionaires are bad for growth, and others aren't (a tabela por país)",
+          "url": "https://cgeg.sipa.columbia.edu/sites/cgeg.sipa.columbia.edu/files/content/Billionaires_WashingtonPost.pdf"
+        },
+        {
+          "titulo": "Our World in Data — A nova linha de US$ 3 por dia: o que mudou e por quê",
+          "url": "https://ourworldindata.org/new-international-poverty-line-3-dollars-per-day"
+        },
+        {
+          "titulo": "Banco Mundial — A trave para acabar com a pobreza extrema foi movida?",
+          "url": "https://datatopics.worldbank.org/world-development-indicators/stories/has-the-goalpost-for-ending-extreme-poverty-been-shifted.html"
+        },
+        {
+          "titulo": "Pritchett & Viarengo — Raising the Bar: A Poverty Line for Global Inclusion (Harvard Growth Lab)",
+          "url": "https://lantpritchett.org/wp-content/uploads/2025/04/Raising-the-Bar-April-26-2025_working-paper.pdf"
+        },
+        {
+          "titulo": "Reddy & Pogge — How Not to Count the Poor",
+          "url": "http://pdf.wri.org/ref/reddy_03_how_not_to.pdf"
+        },
+        {
+          "titulo": "Ravallion — Dollar a Day Revisited (a origem da linha, pelo autor dela)",
+          "url": "https://documents1.worldbank.org/curated/en/350401468157768465/pdf/wps4620.pdf"
+        },
+        {
+          "titulo": "Young, Varner, Lurie & Prisinzano — Millionaire Migration and State Taxation of Top Incomes",
+          "url": "https://cristobalyoung.com/wp-content/uploads/2018/11/NTJ-millionaire-migration-state-taxation.pdf"
+        },
+        {
+          "titulo": "Fox & Liscow — O truque dos ricos não é 'buy, borrow, die' (Tax Policy Center)",
+          "url": "https://taxpolicycenter.org/taxvox/richs-real-tax-trick-isnt-buy-borrow-die"
+        },
+        {
+          "titulo": "Robeyns — Limitarianism: The Case Against Extreme Wealth (resenha LSE)",
+          "url": "https://blogs.lse.ac.uk/lsereviewofbooks/2024/02/08/book-review-limitarianism-the-case-against-extreme-wealth-ingrid-robeyns/"
+        },
+        {
+          "titulo": "Nozick — entitlement vs. desert: por que a defesa forte não é meritocrática",
+          "url": "https://www.libertarianism.org/articles/nozick-distributive-justice-and-difference-between-entitlement-and-desert"
+        },
+        {
+          "titulo": "Gilens & Page — riqueza e influência política (UCLA Luskin)",
+          "url": "https://luskin.ucla.edu/gilens-on-wealth-and-political-influence"
+        },
+        {
+          "titulo": "Oxfam — Riqueza bilionária cresce três vezes mais rápido em 2025 (jan/2026)",
+          "url": "https://www.oxfam.org/en/press-releases/billionaire-wealth-jumps-three-times-faster-2025-highest-peak-ever-sparking"
+        },
+        {
+          "titulo": "World Inequality Report 2026 — quem capturou o crescimento global",
+          "url": "https://wir2026.wid.world/insight/global-economic-inequity/"
+        },
+        {
+          "titulo": "UN IGME / UNICEF — Níveis e tendências da mortalidade infantil 2025",
+          "url": "https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2025/"
+        },
+        {
+          "titulo": "IBGE — 8,6 milhões de pessoas saíram da pobreza entre 2023 e 2024",
+          "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45344-8-6-milhoes-de-pessoas-sairam-da-pobreza-entre-2023-e-2024"
+        },
+        {
+          "titulo": "Forbes Brasil — Lista de bilionários 2026: 71 brasileiros e recorde de patrimônio",
+          "url": "https://forbes.com.br/forbes-money/2026/03/lista-bilionarios-forbes-2026-recordes-na-participacao-e-no-patrimonio-dos-brasileiros/"
+        },
+        {
+          "titulo": "Sahoo & Blumenstock (UC Berkeley) — Quanto custaria acabar com a pobreza extrema",
+          "url": "https://www.jblumenstock.com/files/papers/EOP.pdf"
+        },
+        {
+          "titulo": "OPHI / UNDP — Índice de Pobreza Multidimensional Global 2025",
+          "url": "https://ophi.org.uk/global-mpi/2025"
+        }
+      ]
+    },
+    {
       "slug": "2026-07-30-educacao-publica-privada",
       "titulo": "Educação: pública, privada, e quem paga a conta",
       "tema": "Educação: pública, privada, e quem paga a conta",

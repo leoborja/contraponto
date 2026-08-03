@@ -64,12 +64,16 @@ Modelo `eleven_multilingual_v2`, PT-BR.
 1. **Renda Básica Universal: o dossiê completo** (33:09, 22/jul) — NIT/Friedman, 5 portas de financiamento, Quênia/Alasca/Irã/SIME-DIME, Lei Suplicy
 2. **O modelo Bukele: segurança a qualquer preço?** (27:42, 29/jul) — armadilha de Formosa como parábola, pacto El Faro, mano dura 2003, CV/PCC nascidos em presídios
 3. **Educação: pública, privada, e quem paga a conta** (27:34, 30/jul) — matriz financiar×operar, tribunal dos 70 anos de vouchers, Tooley, Jackson, a grande inversão, Sobral
+4. **Deveriam existir bilionários?** (36:48, 3/ago) — Musk cruza US$ 1 tri (jun/26), Nozick em vez do argumento meritocrático, Bagchi-Svejnar (riqueza politicamente conectada arrasta crescimento; Brasil 27%, EUA 1%), Zucman (0,3% de imposto efetivo vs 7,5% de retorno), bloco da régua de pobreza (linha subiu 40% em jun/25 sem ninguém empobrecer)
 
 ## Backlog de temas (Leo escolhe)
-Fim da escala 6x1 / semana de 4 dias · Taxar os super-ricos (Zucman/G20) · Legalizar drogas (Portugal vs Oregon) · Controle de aluguel e crise da moradia · Regular a IA (AI Act vs EUA vs PL 2338) · Nuclear na transição energética · Privatizar ou não (Correios/Sabesp/Petrobras)
+Fim da escala 6x1 / semana de 4 dias · Legalizar drogas (Portugal vs Oregon) · Controle de aluguel e crise da moradia · Regular a IA (AI Act vs EUA vs PL 2338) · Nuclear na transição energética · Privatizar ou não (Correios/Sabesp/Petrobras) · **Medição e estatística política** (sobra do ep. 4: Pritchett, Reddy-Pogge, Ravallion, medidas FGT, MPI, Dinamarca×Paquistão — pesquisa já feita em `output/2026-08-03-bilionarios/curriculum.json`)
 
 ## Histórico de lições (não repetir erros)
 - Travessões quebraram a entonação do ep. 2 (75 ocorrências) → regras TTS acima + normalizador
 - Revisor v1 dava 9/9/9 em roteiro raso → eixo "profundidade" + auditoria contra curriculum + ponto-cego (pegou erros factuais nos eps. 2 e 3 antes do áudio)
 - Trilha/série de episódios foi considerada e DESCARTADA — um episódio completo é melhor
+- **`debate_map.json` tem schema fixo lido pelo `publish.py`**: `tema`, `modo`, `tese_esquerda`, `tese_direita`, `pontos[{tensao, visao_esquerda, visao_direita}]`, `consenso[]`, `perguntas_abertas[]`, `fontes_chave[{titulo,url}]`. Inventar chaves novas publica um card VAZIO sem erro nenhum (quase aconteceu no ep. 4) — sempre conferir contra o debate_map do episódio anterior
+- Medir monólogo, não só duração: o ep. 4 tinha 11 min de narrador seguido sem contraditório. Quebrar com intervenção dos personagens vale mais que cortar palavras
+- Evitar CAIXA ALTA para ênfase no roteiro (o TTS pode soletrar); siglas conhecidas como IBGE e UBS são lidas corretamente
 - Cache DNS negativo: não testar domínio antes do registro existir (roteador guarda NXDOMAIN por ~30 min)
