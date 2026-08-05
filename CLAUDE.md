@@ -20,7 +20,7 @@ Podcast de debate político gerado por IA. Marx (esquerda) × Friedman (direita)
 1. `curriculum.json` — o que um especialista sabe: conceitos, história, evidências COM números, pensadores com posições REAIS, options_map dos pontos-crux, números-âncora. **Campos obrigatórios adicionais**: `pergunta_do_leo` (a pergunta na forma literal em que ele fez) e `eixo_inegociavel` para cada personagem (ver Regra Zero e "Eixo inegociável" abaixo)
 2. `script.json` — turnos `{speaker: narrador|host_a|host_b, text}`. Auditar contra o curriculum.
 3. `debate_map.json` — **schema FIXO lido pelo `publish.py`**, ver seção de lições
-4. `review.json` — equilíbrio/factual/ouvido/profundidade (0-10) + passada de ponto-cego ("o que um PhD diria que falta?") ANTES do áudio. **Checar também**: a Regra Zero foi cumprida? cada personagem sustentou o `eixo_inegociavel`? o narrador ficou abaixo de 35%?
+4. `review.json` — **ver a seção "Revisor v3" abaixo**. Obrigatório ANTES do áudio
 5. `summary.md` — resumo pro Leo aprovar
 6. `script.md` — versão legível (gerar via `pipeline.script.to_markdown`)
 
@@ -56,6 +56,63 @@ Cada personagem tem UM eixo em que não concede nada e defende a versão forte d
   - `audio.py:normalizar_tts()` limpa —/... como rede de segurança, mas enumeração é estilo: escrever certo na fonte
   - Números por extenso ("três vírgula dois pontos percentuais")
 - **Alvo**: 4.200-4.800 palavras ≈ 27-31 min. **Calibração real medida**: 147-160 wpm (ep. 3: 4.065 palavras = 27:34 → 147 wpm; ep. 5: 4.609 = 29:33 → 156 wpm; ep. 4: 5.873 = 36:48 → 160 wpm). O `settings.yaml` assume 165, que subestima a duração — usar a faixa medida para estimar
+
+### 3.5 Revisor v3 (reescrito em 5/ago após o Leo pedir mais autocrítica)
+
+**O problema que este revisor resolve**: eu sou autor e revisor do mesmo texto, então a nota sai inflada por construção. Prova histórica: dei média **8,88** ao ep. 4 e **9,12** ao ep. 5, e o Leo encontrou falha ESTRUTURAL nos dois. A nota subiu enquanto as falhas continuavam. Erro sistemático medido: **cerca de +1,5 ponto**.
+
+#### Princípio
+A revisão não pergunta "está bom?". Pergunta **"por onde eu destruiria este episódio se quisesse humilhá-lo?"**. O `review.json` é um documento de acusação. **Proibido elogiar** — o que ficou bom vai no `summary.md`, que é comunicação; o review é caça a erro.
+
+#### Régua calibrada (a âncora é o Leo, não o meu gosto)
+| Nota | Significado operacional |
+|---|---|
+| 10 | tentei destruir e não achei nada |
+| 9 | falha que só um especialista da área notaria |
+| 8 | falha que um ouvinte atento notaria |
+| **7** | **falha que o LEO notaria** ← eps. 4 e 5 estavam aqui |
+| 6 | duas ou mais falhas que o Leo notaria |
+| 5 | o eixo não foi trabalhado |
+| <5 | não publicar |
+
+#### Nota final = a MENOR das notas, nunca a média
+Um episódio 9/9/9/5 é um episódio **5**. O ouvinte sente a falha, não a média. Média foi exatamente o que deixou a acionabilidade 5,0 do ep. 5 passar escondida atrás de três notas 9.
+
+**Abaixo de 7 não gera áudio antes de consertar.**
+
+#### Os seis eixos (0-10 cada)
+1. **Equilíbrio** — simetria de concessões e de qualidade dos argumentos
+2. **Factual** — números conferidos, fontes atuais, nada apresentado fora de contexto
+3. **Ouvido** — cold open, ritmo, TTS, peso das vozes, monólogo
+4. **Profundidade** — o ouvinte aprendeu algo que não acharia num resumo
+5. **Acionabilidade** *(novo, ep. 5)* — cada eixo tem ao menos um caso concreto, de preferência brasileiro, e o episódio diz o que já funcionou em algum lugar. Explicar por que o problema é difícil sem dizer o que se faz com ele é meio trabalho
+6. **Fidelidade à pergunta** *(novo, ep. 4)* — a Regra Zero como NOTA, não como caixinha de sim/não
+
+#### Painel adversarial (quatro ataques, escritos por extenso)
+Não basta responder "ok". Cada um escreve a crítica mais dura que conseguir:
+- **O especialista da área**: que erro factual ou omissão material um PhD apontaria?
+- **O militante de esquerda**: onde o Marx foi mal defendido ou virou espantalho?
+- **O militante de direita**: onde o Friedman foi mal defendido ou virou espantalho?
+- **O ouvinte no trânsito**: em que minuto eu desliguei? e o que eu faço com isso na segunda-feira?
+
+#### Checklist de regressão (com EVIDÊNCIA, não com "sim")
+Cada item exige o número do turno que prova o cumprimento:
+- TTS limpo: 0 travessões, 0 reticências, 0 enumerações de 3+, 0 dígitos, 0 caixa alta (ep. 2)
+- Profundidade auditada contra o `curriculum.json` (ep. 3)
+- Regra Zero cumprida, com os turnos dos dois extremos (ep. 4)
+- `eixo_inegociavel` sustentado por cada personagem (ep. 4)
+- Atualidade de cada fonte checada; dado velho é apontado em voz alta por um personagem (ep. 4)
+- Narrador ≤35% e nenhum monólogo >4 min (ep. 5)
+- `debate_map.json` no schema fixo do `publish.py` (ep. 4)
+- Acionabilidade: ao menos um caso concreto por eixo (ep. 5)
+
+#### Lacuna declarada é TAREFA, não nota de rodapé
+Toda lacuna do painel adversarial recebe um destino explícito: **corrigida** (com o turno) ou **descartada** (com o motivo escrito). Não existe "declarada e mantida".
+
+**Por que esta regra existe**: no ep. 5 eu escrevi no próprio review que o episódio "discute custo e proteção, nunca resultado (…) é a maior lacuna, e é honesta" — e não fiz nada. Usei a declaração de limitação como absolvição. É a versão sofisticada de não fazer o trabalho.
+
+#### Previsão falsificável (fecha o loop)
+O review termina respondendo: **"se o Leo reclamar de algo neste episódio, do que vai ser?"** A previsão fica registrada e é comparada com o que ele realmente disser. Histórico: no ep. 4 eu não previ (a crítica dele nem estava no review); no ep. 5 eu previ e ignorei. Um de dois previstos, e o previsto foi desperdiçado.
 
 ### 4. Áudio e publicação
 ```bash
