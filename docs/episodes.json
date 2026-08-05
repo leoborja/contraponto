@@ -2,6 +2,117 @@
   "podcast": "Contraponto",
   "episodes": [
     {
+      "slug": "2026-08-05-funcionalismo",
+      "titulo": "Funcionalismo público: estabilidade é proteção ou privilégio?",
+      "tema": "Funcionalismo público: estabilidade é proteção ou privilégio?",
+      "data": "2026-08-05",
+      "duracao_seg": 1773,
+      "audio": "episodes/2026-08-05-funcionalismo/podcast.mp3",
+      "tese_esquerda": "Sim, o cargo deve ser sem possibilidade de demissão por avaliação de desempenho, e essa posição não é negociável. O concurso e a estabilidade não nasceram de corporativismo: nasceram contra o sistema de espólios, que no limite matou um presidente americano em 1881. Evans e Rauch mostraram em 35 países que carreira meritocrática e estável produz MAIS crescimento. Criar um poder de demitir é criar um instrumento de perseguição política, e a pergunta que nunca é respondida é quem avalia o avaliador. Além disso, o Brasil não tem servidor demais (12,1% da força de trabalho contra 20,8% da OCDE): tem um Estado em formato de taça, com base enorme e mal paga na escola e no posto de saúde, e um topo minúsculo e caríssimo.",
+      "tese_direita": "Não, nenhum emprego deveria ser inderrubável por força de lei. O serviço público federal demite cerca de 326 pessoas por ano, e apenas 204 por desídia em oito anos inteiros: o instrumento existe no papel e não existe na prática. O próprio Evans-Rauch exige salário COMPETITIVO com o privado, não um prêmio de 96% como o federal brasileiro. E o concurso, tratado como sinônimo de mérito, mede mérito em fazer prova: acerta a porta de entrada e desiste de aferir o resto de uma carreira de trinta anos. Um erro de contratação dura três décadas.",
+      "consenso": [
+        "O Brasil não tem servidores demais em número: 12,1% da força de trabalho contra 20,8% da média da OCDE encerra essa parte da conversa",
+        "As 1.501 horas de burocracia tributária não são causadas por quantidade de funcionário, e cortar gente sem cortar norma piora a fila",
+        "A desigualdade dentro do funcionalismo é maior e mais escandalosa que a desigualdade entre funcionalismo e setor privado",
+        "A avaliação de desempenho está na Constituição desde 1998 e nunca foi regulamentada: a omissão de 28 anos é escolha política, não impedimento jurídico",
+        "O regime previdenciário militar é o mais difícil de defender de todos, e é justamente o único que saiu quase intacto da reforma de 2019",
+        "O concurso público brasileiro seleciona mérito em fazer prova, não capacidade de trabalhar — e depois não afere mais nada por trinta anos"
+      ],
+      "perguntas_abertas": [
+        "Se a avaliação de desempenho vira instrumento de perseguição política, quem avalia o avaliador?",
+        "Por que este país discute com tanta energia a estabilidade da professora municipal e com tão pouca o penduricalho do desembargador e a reserva aos 48 anos?",
+        "O que se ganha demitindo servidor se as regras que criam a fila continuarem lá?",
+        "Um sindicato que defende a base e o topo com o mesmo discurso está defendendo o serviço público ou a casta dentro dele?",
+        "Se o problema é que o concurso mede a coisa errada, a saída é melhorar o concurso ou aceitar que todo processo seletivo erra e precisa de correção?"
+      ],
+      "fontes": [
+        {
+          "titulo": "Pendleton Civil Service Reform Act (1883) — a lei que nasceu do assassinato de Garfield",
+          "url": "https://en.wikipedia.org/wiki/Pendleton_Civil_Service_Reform_Act"
+        },
+        {
+          "titulo": "Evans & Rauch — Bureaucracy and Growth: efeitos de estruturas estatais weberianas sobre o crescimento (PDF)",
+          "url": "https://homepage.ntu.edu.tw/~kslin/macro2009/Evans%20and%20Rauch%201999.pdf"
+        },
+        {
+          "titulo": "Atlas do Estado Brasileiro (IPEA) — quantos servidores o Brasil tem e onde estão",
+          "url": "https://www.ipea.gov.br/atlasestado/"
+        },
+        {
+          "titulo": "IPEA — desigualdade salarial no serviço público: Judiciário, Legislativo e Executivo",
+          "url": "https://www.ipea.gov.br/atlasestado/arquivos/rmd/2191-adebanalisediadoservidor-2025.html"
+        },
+        {
+          "titulo": "República em Dados — pessoas do setor público",
+          "url": "https://dados.republica.org/pessoas-do-setor-publico/dados"
+        },
+        {
+          "titulo": "Banco Mundial — Um Ajuste Justo: eficiência e equidade do gasto público no Brasil (prêmio salarial de 96% no federal)",
+          "url": "https://www.worldbank.org/pt/news/press-release/2017/11/21/brazil-new-world-bank-report-analyzes-efficiency-equality-public-expenditure"
+        },
+        {
+          "titulo": "Emenda Constitucional 19/1998 — o artigo 41 e a lei complementar que nunca veio",
+          "url": "https://www.lexml.gov.br/urn/urn:lex:br:federal:emenda.constitucional:1998-06-04;19"
+        },
+        {
+          "titulo": "Metrópoles — órgãos federais demitem cerca de 326 servidores por ano",
+          "url": "https://www.metropoles.com/brasil/servidor-brasil/orgaos-federais-expulsam-323-servidores-publicos-por-ano"
+        },
+        {
+          "titulo": "PEC 38/2025 — a reforma administrativa em tramitação e a perda de assinaturas",
+          "url": "https://asmetro.org.br/portalsn/2026/01/30/pec-38-2025-reforma-administrativa-enfraquece-no-congresso-mas-o-risco-ao-servico-publico-permanece/"
+        },
+        {
+          "titulo": "Lei 13.954/2019 — o regime próprio dos militares (Planalto)",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13954.htm"
+        },
+        {
+          "titulo": "Gazeta do Povo — o déficit da previdência das Forças Armadas e a nova reforma",
+          "url": "https://www.gazetadopovo.com.br/economia/por-que-a-previdencia-das-forcas-armadas-virou-alvo-de-uma-nova-reforma/"
+        },
+        {
+          "titulo": "Brasil de Fato — quase metade do orçamento da Defesa foi para inativos e pensões em 2025",
+          "url": "https://www.brasildefato.com.br/2026/01/27/quase-metade-do-orcamento-da-defesa-foi-para-inativos-e-pensoes-militares-em-2025/"
+        },
+        {
+          "titulo": "Estado de Minas — penduricalhos: tribunais pagam até R$ 495 mil a juízes",
+          "url": "https://www.em.com.br/politica/2026/07/7455540-penduricalhos-tribunais-desafiam-stf-e-pagam-ate-rs-495-mil-a-juizes.html"
+        },
+        {
+          "titulo": "Poder360 — CNJ e a regulamentação dos penduricalhos",
+          "url": "https://www.poder360.com.br/poder-justica/cnj-tem-maioria-para-regulamentar-pagamento-dos-penduricalhos/"
+        },
+        {
+          "titulo": "FENACON — empresas brasileiras gastam 1.501 horas por ano com impostos, o pior do mundo",
+          "url": "https://fenacon.org.br/noticias/brasil-lidera-ranking-de-empresas-que-gastam-mais-tempo-para-calcular-e-pagar-imposto/"
+        },
+        {
+          "titulo": "Sistema de Alta Dirección Pública — o modelo chileno de serviço civil",
+          "url": "https://www.serviciocivil.cl/sistema-de-alta-direccion-publica-2/sistema-de-alta-direccion-publica/"
+        },
+        {
+          "titulo": "Getting better but feeling worse? A avaliação crítica da reforma neozelandesa (PDF)",
+          "url": "https://ipmn.net/wp-content/uploads/2018/07/3_1_Getting_Better.pdf"
+        },
+        {
+          "titulo": "New Zealand State Sector Act 1988 — a reforma e sua substituição em 2020",
+          "url": "https://www.publicservice.govt.nz/research-and-data/new-zealands-state-sector-reform-a-decade-of-change"
+        },
+        {
+          "titulo": "Shirking and employment protection legislation — evidência de queda de esforço após estabilidade",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165176510000716"
+        },
+        {
+          "titulo": "Bureau-shaping model — a crítica de Dunleavy a Niskanen",
+          "url": "https://en.wikipedia.org/wiki/Bureau-shaping_model"
+        },
+        {
+          "titulo": "MEC — piso salarial do magistério 2025: R$ 4.867,77",
+          "url": "https://www.gov.br/mec/pt-br/assuntos/noticias/2025/janeiro/piso-salarial-dos-professores-tem-reajuste-acima-da-inflacao"
+        }
+      ]
+    },
+    {
       "slug": "2026-08-03-bilionarios",
       "titulo": "Deveriam existir bilionários?",
       "tema": "Deveriam existir bilionários?",

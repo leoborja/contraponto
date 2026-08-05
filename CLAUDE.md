@@ -55,7 +55,7 @@ Cada personagem tem UM eixo em que não concede nada e defende a versão forte d
   - NUNCA travessão (—) | NUNCA reticências (...) | enumerações de no máx. 2 itens por vírgula (listas longas viram frase corrida com "e")
   - `audio.py:normalizar_tts()` limpa —/... como rede de segurança, mas enumeração é estilo: escrever certo na fonte
   - Números por extenso ("três vírgula dois pontos percentuais")
-- **Alvo**: 4.200-4.800 palavras ≈ 25-30 min (texto TTS-safe roda ~147-165 wpm; ep. 3 deu 4.065 palavras = 27:34)
+- **Alvo**: 4.200-4.800 palavras ≈ 27-31 min. **Calibração real medida**: 147-160 wpm (ep. 3: 4.065 palavras = 27:34 → 147 wpm; ep. 5: 4.609 = 29:33 → 156 wpm; ep. 4: 5.873 = 36:48 → 160 wpm). O `settings.yaml` assume 165, que subestima a duração — usar a faixa medida para estimar
 
 ### 4. Áudio e publicação
 ```bash
@@ -87,6 +87,7 @@ Modelo `eleven_multilingual_v2`, PT-BR.
 2. **O modelo Bukele: segurança a qualquer preço?** (27:42, 29/jul) — armadilha de Formosa como parábola, pacto El Faro, mano dura 2003, CV/PCC nascidos em presídios
 3. **Educação: pública, privada, e quem paga a conta** (27:34, 30/jul) — matriz financiar×operar, tribunal dos 70 anos de vouchers, Tooley, Jackson, a grande inversão, Sobral
 4. **Deveriam existir bilionários?** (36:48, 3/ago) — Musk cruza US$ 1 tri (jun/26), Nozick em vez do argumento meritocrático, Bagchi-Svejnar (riqueza politicamente conectada arrasta crescimento; Brasil 27%, EUA 1%), Zucman (0,3% de imposto efetivo vs 7,5% de retorno), bloco da régua de pobreza (linha subiu 40% em jun/25 sem ninguém empobrecer)
+5. **Funcionalismo público: estabilidade é proteção ou privilégio?** (29:33, 5/ago) — 1º episódio sob a Regra Zero; cold open do assassinato de Garfield por um caçador de emprego público (1881) → Pendleton Act; Brasil tem 12,1% da força de trabalho no setor público vs 20,8% OCDE mas gasta 13,5% do PIB vs 9,3% (Estado em formato de taça); EC 19/1998 já permite demitir por desempenho e a lei complementar nunca veio (28 anos); déficit militar de R$ 159 mil/beneficiário vs R$ 9,4 mil no INSS; vitaliciedade ≠ estabilidade
 
 ## Backlog de temas (Leo escolhe)
 Fim da escala 6x1 / semana de 4 dias · Legalizar drogas (Portugal vs Oregon) · Controle de aluguel e crise da moradia · Regular a IA (AI Act vs EUA vs PL 2338) · Nuclear na transição energética · Privatizar ou não (Correios/Sabesp/Petrobras) · **Medição e estatística política** (sobra do ep. 4: Pritchett, Reddy-Pogge, Ravallion, medidas FGT, MPI, Dinamarca×Paquistão — pesquisa já feita em `output/2026-08-03-bilionarios/curriculum.json`)
