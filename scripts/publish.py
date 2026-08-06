@@ -31,9 +31,15 @@ PODCAST_NOME = "Contraponto"
 # ---- configuração do feed RSS ----
 SITE_URL = "https://contraponto.leoborja.com.br"
 AUTOR = "Leo Borja"
-# ⚠️ Este email fica PÚBLICO no feed e é exigido pelo Apple Podcasts para
-# verificar a titularidade. Trocar se preferir outro endereço.
-EMAIL_OWNER = "contato@leoborja.com.br"
+# ⚠️ Este email fica PÚBLICO no feed XML e é usado por Spotify e Apple para
+# verificar titularidade (o código de 8 dígitos chega nele).
+# Trocar é seguro DEPOIS de a submissão estar concluída: a titularidade passa a
+# viver na conta Spotify / Apple ID, não no endereço. Nunca trocar no meio de
+# uma submissão pendente.
+# Melhoria futura: criar contato@leoborja.com.br no Cloudflare Email Routing
+# (grátis, o domínio já está lá) encaminhando para este Gmail. Aí o endereço
+# público deixa de ser pessoal e o encaminhamento muda sem alterar o feed.
+EMAIL_OWNER = "rgborja.leo@gmail.com"
 CAPA = f"{SITE_URL}/cover.png"  # 1400x1400, mínimo exigido pela Apple
 IDIOMA = "pt-BR"
 # Categorias válidas da Apple: https://podcasters.apple.com/support/1691-apple-podcasts-categories
