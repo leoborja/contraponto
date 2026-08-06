@@ -2,6 +2,101 @@
   "podcast": "Contraponto",
   "episodes": [
     {
+      "slug": "2026-08-06-funcionalismo-parte-2",
+      "titulo": "Funcionalismo, parte 2: o que de fato funciona",
+      "tema": "Funcionalismo, parte 2: o que de fato funciona",
+      "data": "2026-08-06",
+      "duracao_seg": 1810,
+      "audio": "episodes/2026-08-06-funcionalismo-parte-2/podcast.mp3",
+      "tese_esquerda": "Sobral encerra o falso dilema do episódio anterior: a cidade saiu da posição 1.407 do IDEB em 2005 para o primeiro lugar do Brasil sem tirar a estabilidade de um único professor. O que mudou foi a seleção do diretor de escola, não o direito de permanecer. E o gov.br devolveu 150 milhões de horas por ano aos brasileiros sem demitir ninguém, provando que o gargalo era processo, não pessoa. Nos seis casos examinados pela ENAP, incluindo EUA, Portugal e Reino Unido, nenhum avalia produtividade de servidor: se três países ricos com décadas de reforma não chegaram lá, o ônus de mostrar o método funcionando é de quem propõe a reforma.",
+      "tese_direita": "Sobral funcionou porque criou consequência: o cargo de direção deixou de ser prêmio político e passou a ser ocupado por quem entrega, com substituibilidade onde antes havia proteção. E a replicação para o Ceará aconteceu porque uma pessoa competente chegou ao governo e levou a equipe, não porque uma norma se espalhou — o que mostra que gestão depende de quem comanda, num sistema desenhado para tornar isso irrelevante. Estabilidade no vínculo e avaliação na função é o desenho correto. Além disso, gasto com pessoal é despesa obrigatória: engessa o orçamento e é a razão estrutural da incapacidade brasileira de investir.",
+      "consenso": [
+        "A comparação de servidores por força de trabalho entre Brasil e OCDE não é homogênea: parte da diferença é cesta de serviços, não eficiência",
+        "Sobral funcionou, e o desenho que os dois lados aceitam é o mesmo: estabilidade no vínculo, avaliação na função de direção",
+        "Digitalização sem simplificação de norma é papelada com wi-fi: processo e pessoal são problemas diferentes, e confundi-los é o erro mais comum do debate",
+        "Não existe método validado para medir produtividade individual de servidor, e quem promete isso está vendendo o que não tem",
+        "Pagar por desempenho individual pode piorar o resultado onde o trabalho é coletivo, e servidor responde mais a reconhecimento que a dinheiro",
+        "Começar a reforma por emenda constitucional é começar pelo lugar mais difícil e menos reversível: os casos internacionais bem-sucedidos começaram por experimentação em pequena escala",
+        "Se um modelo se expande sem passar pelo teste da evidência, como as OSS de São Paulo, ele não está se expandindo por mérito técnico"
+      ],
+      "perguntas_abertas": [
+        "Por que a melhor reforma administrativa brasileira dos últimos vinte anos foi feita numa prefeitura e é catalogada como política educacional?",
+        "Se não sabemos medir a pessoa, medir a unidade e cobrar quem a dirige é suficiente ou é desvio?",
+        "A replicação de Sobral dependeu de uma pessoa competente chegar ao poder. Como se desenha um sistema que não dependa disso?",
+        "Quem vai auditar se a reforma tributária funcionou, se o resultado só aparece em 2033?"
+      ],
+      "fontes": [
+        {
+          "titulo": "IDEB 2023 — Sobral em primeiro lugar entre municípios com mais de 70 mil habitantes",
+          "url": "https://sobralemrevista.com.br/2024/08/16/sobral-e-primeiro-lugar-do-brasil-no-ideb-de-2023-entre-municipios-com-mais-de-70-mil-habitantes/"
+        },
+        {
+          "titulo": "Nota informativa IDEB 2023 (INEP)",
+          "url": "https://download.inep.gov.br/ideb/nota_informativa_ideb_2023.pdf"
+        },
+        {
+          "titulo": "Sobral e a autonomia dos diretores escolares (Todos pela Educação)",
+          "url": "https://educacaoquedacerto.todospelaeducacao.org.br/redes-e-desafios/lideranca-exemplar-sobral-e-a-autonomia-dos-diretores-escolares/"
+        },
+        {
+          "titulo": "O exemplo de Sobral: como tornar a educação pública prioridade eficiente (CLP)",
+          "url": "https://clp.org.br/o-exemplo-de-sobral-ce-como-tornar-a-educacao-publica-uma-prioridade-eficiente/"
+        },
+        {
+          "titulo": "PAIC no Ceará — origem em Sobral e estadualização pela Lei 14.026/2007 (Observatório de Educação)",
+          "url": "https://observatoriodeeducacao.institutounibanco.org.br/cedoc/detalhe/o-programa-alfabetizacao-na-idade-certa-paic-no-ceara,623dc085-ee73-441c-b016-e6f948934919"
+        },
+        {
+          "titulo": "PAIC — avaliação de impacto (IMDS)",
+          "url": "https://imdsbrasil.org/impacto/programa-alfabetizacao-na-idade-certa-paic-no-ceara/"
+        },
+        {
+          "titulo": "gov.br — economia de R$ 38 bilhões e 150 milhões de horas (Conjur, anuário 2026)",
+          "url": "https://www.conjur.com.br/2026-abr-01/anuario-do-balcao-ao-digital-gov-br-muda-servicos-publicos/"
+        },
+        {
+          "titulo": "Conecta gov.br — 1,1 bilhão de transações de dados em 2025 (Agência Gov)",
+          "url": "https://agenciagov.ebc.com.br/noticias/202601/mais-de-1-1-bilhao-de-transacoes-de-dados-foram-realizadas-no-conecta-gov-br-em-2025"
+        },
+        {
+          "titulo": "Reforma tributária — obrigatoriedade dos campos de IBS e CBS a partir de 3/ago/2026 (Comitê Gestor do IBS)",
+          "url": "https://www.cgibs.gov.br/novo-marco-da-reforma-tributaria-inicia-em-03-de-agosto-com-preenchimento-obrigatorio-dos-campos-relativos-ao-ibs-e-a-cbs"
+        },
+        {
+          "titulo": "Organizações Sociais de saúde em São Paulo: avanços e limites do controle externo (SciELO)",
+          "url": "https://www.scielo.br/j/sssoc/a/MhHy6ytmCHGBdDgF4ntBsHf/?format=html&lang=pt"
+        },
+        {
+          "titulo": "Avaliando o desempenho do servidor público — ENAP/EvEx (ago/2023)",
+          "url": "https://repositorio.enap.gov.br/bitstream/1/7886/1/2023.09.30%20-%20Avaliando%20o%20desempenho%20do%20servidor%20p%C3%BAblico_EXTERNO.pdf"
+        },
+        {
+          "titulo": "Decreto 11.072/2022 — Programa de Gestão e Desempenho: controle de entregas em vez de ponto",
+          "url": "https://www.gov.br/servidor/pt-br/assuntos/noticias/2022/julho/decreto-regulamenta-teletrabalho-e-controle-de-produtividade-no-executivo-federal"
+        },
+        {
+          "titulo": "Getting better but feeling worse? A avaliação crítica da reforma neozelandesa (PDF)",
+          "url": "https://ipmn.net/wp-content/uploads/2018/07/3_1_Getting_Better.pdf"
+        },
+        {
+          "titulo": "New Zealand State Sector Act 1988 e sua substituição pelo Public Service Act 2020",
+          "url": "https://www.publicservice.govt.nz/research-and-data/new-zealands-state-sector-reform-a-decade-of-change"
+        },
+        {
+          "titulo": "Sistema de Alta Dirección Pública — o modelo chileno",
+          "url": "https://www.serviciocivil.cl/sistema-de-alta-direccion-publica-2/sistema-de-alta-direccion-publica/"
+        },
+        {
+          "titulo": "e-Estonia — 99% dos serviços online e 800 anos de trabalho economizados",
+          "url": "https://complexdiscovery.com/finally-100-digital-estonias-30-year-journey-from-the-ussr-to-e-estonia/"
+        },
+        {
+          "titulo": "FENACON — 1.501 horas por ano para calcular e pagar tributos no Brasil",
+          "url": "https://fenacon.org.br/noticias/brasil-lidera-ranking-de-empresas-que-gastam-mais-tempo-para-calcular-e-pagar-imposto/"
+        }
+      ]
+    },
+    {
       "slug": "2026-08-05-funcionalismo",
       "titulo": "Funcionalismo público: estabilidade é proteção ou privilégio?",
       "tema": "Funcionalismo público: estabilidade é proteção ou privilégio?",
