@@ -10,6 +10,7 @@
 <meta property="og:title" content="Contraponto — os dois lados de um debate">
 <meta property="og:description" content="Esquerda, direita, e onde eles concordam. Debates profundos de ~30 min.">
 <meta property="og:image" content="https://contraponto.leoborja.com.br/logo.png">
+<link rel="alternate" type="application/rss+xml" title="Contraponto — feed de podcast" href="/feed.xml">
 <meta property="og:type" content="website">
 <style>
   :root{
@@ -23,6 +24,11 @@
   header{text-align:center;padding:22px 0 16px;border-bottom:1px solid var(--linha);margin-bottom:18px}
   header img.logo{width:190px;height:auto;display:block;margin:0 auto;border-radius:16px}
   header p{color:var(--muted);margin-top:10px;font-size:14px}
+  header p.assine{margin-top:12px;display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap}
+  header p.assine a{color:var(--consenso);text-decoration:none;border:1px solid var(--consenso);
+    border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;transition:background .15s}
+  header p.assine a:hover,header p.assine a:focus{background:rgba(61,220,151,.12)}
+  header p.assine .assine-hint{color:var(--muted);font-size:12px}
 
   /* ---- lista de episódios ---- */
   .ep{background:var(--card);border:1px solid var(--linha);border-radius:14px;margin-bottom:14px;overflow:hidden}
@@ -83,6 +89,10 @@
 <header>
   <img class="logo" src="logo.png" alt="Contraponto">
   <p>Os dois lados de um debate. Esquerda, direita, e onde eles concordam.</p>
+  <p class="assine">
+    <a href="/feed.xml" id="feed-link">Assinar no seu app de podcast</a>
+    <span class="assine-hint">para ouvir offline</span>
+  </p>
 </header>
 <main id="app"><div class="empty">Carregando episódios…</div></main>
 
@@ -218,6 +228,30 @@ fetch('episodes.json?_=' + Date.now())
   .then(r => r.json())
   .then(d => { episodes = d.episodes || []; render(); })
   .catch(() => { $('app').innerHTML = '<div class="empty">Não consegui carregar os episódios.</div>'; });
+
+// Assinar: copia a URL do feed para colar no app de podcast, em vez de abrir XML cru.
+// Ctrl/Cmd+clique e clique do meio seguem o comportamento nativo do navegador.
+(function(){
+  const link = $('feed-link');
+  if(!link) return;
+  const hint = document.querySelector('.assine-hint');
+  const original = hint ? hint.textContent : '';
+  link.addEventListener('click', async (ev) => {
+    if(ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button !== 0) return;
+    const url = new URL(link.getAttribute('href'), location.href).href;
+    try {
+      await navigator.clipboard.writeText(url);
+      ev.preventDefault();
+      if(hint){
+        hint.textContent = 'link copiado, cole no seu app';
+        clearTimeout(link._t);
+        link._t = setTimeout(() => { hint.textContent = original; }, 4000);
+      }
+    } catch(e) {
+      /* sem permissão de clipboard: deixa o navegador abrir o feed */
+    }
+  });
+})();
 </script>
 </body>
 </html>

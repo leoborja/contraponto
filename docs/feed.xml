@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contraponto</title>
+    <link>https://contraponto.leoborja.com.br</link>
+    <atom:link href="https://contraponto.leoborja.com.br/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>pt-BR</language>
+    <copyright>Leo Borja</copyright>
+    <lastBuildDate>Thu, 06 Aug 2026 16:12:00 +0000</lastBuildDate>
+    <description>Podcast de debate político gerado por IA. Cada episódio pega um tema em disputa e monta um debate profundo entre dois personagens que discordam de verdade, Karl Marx e Milton Friedman, mediados por Sócrates, que ensina o tema antes do debate e fecha mostrando onde os dois concordam e quais perguntas seguem abertas.</description>
+    <itunes:summary>Podcast de debate político gerado por IA. Cada episódio pega um tema em disputa e monta um debate profundo entre dois personagens que discordam de verdade, Karl Marx e Milton Friedman, mediados por Sócrates, que ensina o tema antes do debate e fecha mostrando onde os dois concordam e quais perguntas seguem abertas.</itunes:summary>
+    <itunes:author>Leo Borja</itunes:author>
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://contraponto.leoborja.com.br/cover.png"/>
+    <image>
+      <url>https://contraponto.leoborja.com.br/cover.png</url>
+      <title>Contraponto</title>
+      <link>https://contraponto.leoborja.com.br</link>
+    </image>
+    <itunes:owner>
+      <itunes:name>Leo Borja</itunes:name>
+      <itunes:email>contato@leoborja.com.br</itunes:email>
+    </itunes:owner>
+    <itunes:category text="News">
+      <itunes:category text="Politics"/>
+    </itunes:category>
+    <item>
+      <title>Funcionalismo, parte 2: o que de fato funciona</title>
+      <link>https://contraponto.leoborja.com.br/#2026-08-06-funcionalismo-parte-2</link>
+      <guid isPermaLink="false">2026-08-06-funcionalismo-parte-2</guid>
+      <pubDate>Thu, 06 Aug 2026 15:00:00 +0000</pubDate>
+      <description>Esquerda: Sobral encerra o falso dilema do episódio anterior: a cidade saiu da posição 1.407 do IDEB em 2005 para o primeiro lugar do Brasil sem tirar a estabilidade de um único professor. O que mudou foi a seleção do diretor de escola, não o direito de permanecer. E o gov.br devolveu 150 milhões de horas por ano aos brasileiros sem demitir ninguém, provando que o gargalo era processo, não pessoa. Nos seis casos examinados pela ENAP, incluindo EUA, Portugal e Reino Unido, nenhum avalia produtividade de servidor: se três países ricos com décadas de reforma não chegaram lá, o ônus de mostrar o método funcionando é de quem propõe a reforma.
+
+Direita: Sobral funcionou porque criou consequência: o cargo de direção deixou de ser prêmio político e passou a ser ocupado por quem entrega, com substituibilidade onde antes havia proteção. E a replicação para o Ceará aconteceu porque uma pessoa competente chegou ao governo e levou a equipe, não porque uma norma se espalhou — o que mostra que gestão depende de quem comanda, num sistema desenhado para tornar isso irrelevante. Estabilidade no vínculo e avaliação na função é o desenho correto. Além disso, gasto com pessoal é despesa obrigatória: engessa o orçamento e é a razão estrutural da incapacidade brasileira de investir.
+
+Perguntas abertas: Por que a melhor reforma administrativa brasileira dos últimos vinte anos foi feita numa prefeitura e é catalogada como política educacional? Se não sabemos medir a pessoa, medir a unidade e cobrar quem a dirige é suficiente ou é desvio? A replicação de Sobral dependeu de uma pessoa competente chegar ao poder. Como se desenha um sistema que não dependa disso?</description>
+      <itunes:summary>Esquerda: Sobral encerra o falso dilema do episódio anterior: a cidade saiu da posição 1.407 do IDEB em 2005 para o primeiro lugar do Brasil sem tirar a estabilidade de um único professor. O que mudou foi a seleção do diretor de escola, não o direito de permanecer. E o gov.br devolveu 150 milhões de horas por ano aos brasileiros sem demitir ninguém, provando que o gargalo era processo, não pessoa. Nos seis casos examinados pela ENAP, incluindo EUA, Portugal e Reino Unido, nenhum avalia produtividade de servidor: se três países ricos com décadas de reforma não chegaram lá, o ônus de mostrar o método funcionando é de quem propõe a reforma.
+
+Direita: Sobral funcionou porque criou consequência: o cargo de direção deixou de ser prêmio político e passou a ser ocupado por quem entrega, com substituibilidade onde antes havia proteção. E a replicação para o Ceará aconteceu porque uma pessoa competente chegou ao governo e levou a equipe, não porque uma norma se espalhou — o que mostra que gestão depende de quem comanda, num sistema desenhado para tornar isso irrelevante. Estabilidade no vínculo e avaliação na função é o desenho correto. Além disso, gasto com pessoal é despesa obrigatória: engessa o orçamento e é a razão estrutural da incapacidade brasileira de investir.
+
+Perguntas abertas: Por que a melhor reforma administrativa brasileira dos últimos vinte anos foi feita numa prefeitura e é catalogada como política educacional? Se não sabemos medir a pessoa, medir a unidade e cobrar quem a dirige é suficiente ou é desvio? A replicação de Sobral dependeu de uma pessoa competente chegar ao poder. Como se desenha um sistema que não dependa disso?</itunes:summary>
+      <itunes:author>Leo Borja</itunes:author>
+      <itunes:duration>30:10</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-06-funcionalismo-parte-2/podcast.mp3" length="14487318" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Funcionalismo público: estabilidade é proteção ou privilégio?</title>
+      <link>https://contraponto.leoborja.com.br/#2026-08-05-funcionalismo</link>
+      <guid isPermaLink="false">2026-08-05-funcionalismo</guid>
+      <pubDate>Wed, 05 Aug 2026 14:00:00 +0000</pubDate>
+      <description>Esquerda: Sim, o cargo deve ser sem possibilidade de demissão por avaliação de desempenho, e essa posição não é negociável. O concurso e a estabilidade não nasceram de corporativismo: nasceram contra o sistema de espólios, que no limite matou um presidente americano em 1881. Evans e Rauch mostraram em 35 países que carreira meritocrática e estável produz MAIS crescimento. Criar um poder de demitir é criar um instrumento de perseguição política, e a pergunta que nunca é respondida é quem avalia o avaliador. Além disso, o Brasil não tem servidor demais (12,1% da força de trabalho contra 20,8% da OCDE): tem um Estado em formato de taça, com base enorme e mal paga na escola e no posto de saúde, e um topo minúsculo e caríssimo.
+
+Direita: Não, nenhum emprego deveria ser inderrubável por força de lei. O serviço público federal demite cerca de 326 pessoas por ano, e apenas 204 por desídia em oito anos inteiros: o instrumento existe no papel e não existe na prática. O próprio Evans-Rauch exige salário COMPETITIVO com o privado, não um prêmio de 96% como o federal brasileiro. E o concurso, tratado como sinônimo de mérito, mede mérito em fazer prova: acerta a porta de entrada e desiste de aferir o resto de uma carreira de trinta anos. Um erro de contratação dura três décadas.
+
+Perguntas abertas: Se a avaliação de desempenho vira instrumento de perseguição política, quem avalia o avaliador? Por que este país discute com tanta energia a estabilidade da professora municipal e com tão pouca o penduricalho do desembargador e a reserva aos 48 anos? O que se ganha demitindo servidor se as regras que criam a fila continuarem lá?</description>
+      <itunes:summary>Esquerda: Sim, o cargo deve ser sem possibilidade de demissão por avaliação de desempenho, e essa posição não é negociável. O concurso e a estabilidade não nasceram de corporativismo: nasceram contra o sistema de espólios, que no limite matou um presidente americano em 1881. Evans e Rauch mostraram em 35 países que carreira meritocrática e estável produz MAIS crescimento. Criar um poder de demitir é criar um instrumento de perseguição política, e a pergunta que nunca é respondida é quem avalia o avaliador. Além disso, o Brasil não tem servidor demais (12,1% da força de trabalho contra 20,8% da OCDE): tem um Estado em formato de taça, com base enorme e mal paga na escola e no posto de saúde, e um topo minúsculo e caríssimo.
+
+Direita: Não, nenhum emprego deveria ser inderrubável por força de lei. O serviço público federal demite cerca de 326 pessoas por ano, e apenas 204 por desídia em oito anos inteiros: o instrumento existe no papel e não existe na prática. O próprio Evans-Rauch exige salário COMPETITIVO com o privado, não um prêmio de 96% como o federal brasileiro. E o concurso, tratado como sinônimo de mérito, mede mérito em fazer prova: acerta a porta de entrada e desiste de aferir o resto de uma carreira de trinta anos. Um erro de contratação dura três décadas.
+
+Perguntas abertas: Se a avaliação de desempenho vira instrumento de perseguição política, quem avalia o avaliador? Por que este país discute com tanta energia a estabilidade da professora municipal e com tão pouca o penduricalho do desembargador e a reserva aos 48 anos? O que se ganha demitindo servidor se as regras que criam a fila continuarem lá?</itunes:summary>
+      <itunes:author>Leo Borja</itunes:author>
+      <itunes:duration>29:33</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-05-funcionalismo/podcast.mp3" length="14187850" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Deveriam existir bilionários?</title>
+      <link>https://contraponto.leoborja.com.br/#2026-08-03-bilionarios</link>
+      <guid isPermaLink="false">2026-08-03-bilionarios</guid>
+      <pubDate>Mon, 03 Aug 2026 13:00:00 +0000</pubDate>
+      <description>Esquerda: O bolo cresceu, mas a fatia nova foi quase toda para o mesmo lugar: desde 1980, o 0,1% mais rico capturou tanto crescimento quanto a metade mais pobre da humanidade inteira. Não é preciso provar soma zero para mostrar que a riqueza extrema é um problema. Basta ver que ela se converte em poder político não eleito (bilionários são 4.000x mais propensos a ocupar cargo público) e que o patrimônio no topo rende 7,5% ao ano enquanto paga 0,3% de imposto efetivo. A concentração não é um desvio do sistema: é o funcionamento dele.
+
+Direita: A defesa forte da riqueza extrema não é meritocrática, é de processo (Nozick): o padrão que aparece no fim é irrelevante se cada passo do caminho foi legítimo. E a evidência dá razão ao recorte: a riqueza de bilionários politicamente conectada arrasta o crescimento, mas a riqueza gerada em mercado não arrasta. O problema nunca foi o tamanho da fortuna, é a origem dela. Se o poder econômico compra o político, feche a loja em vez de confiscar o comprador.
+
+Perguntas abertas: O problema é a altura da pilha, ou é a escada que foi usada para chegar lá? Existe um teto ético à riqueza (Robeyns), ou qualquer teto é uma violação de liberdade? O perigo é o bilionário ter poder demais, ou o Estado ter poder vendável demais?</description>
+      <itunes:summary>Esquerda: O bolo cresceu, mas a fatia nova foi quase toda para o mesmo lugar: desde 1980, o 0,1% mais rico capturou tanto crescimento quanto a metade mais pobre da humanidade inteira. Não é preciso provar soma zero para mostrar que a riqueza extrema é um problema. Basta ver que ela se converte em poder político não eleito (bilionários são 4.000x mais propensos a ocupar cargo público) e que o patrimônio no topo rende 7,5% ao ano enquanto paga 0,3% de imposto efetivo. A concentração não é um desvio do sistema: é o funcionamento dele.
+
+Direita: A defesa forte da riqueza extrema não é meritocrática, é de processo (Nozick): o padrão que aparece no fim é irrelevante se cada passo do caminho foi legítimo. E a evidência dá razão ao recorte: a riqueza de bilionários politicamente conectada arrasta o crescimento, mas a riqueza gerada em mercado não arrasta. O problema nunca foi o tamanho da fortuna, é a origem dela. Se o poder econômico compra o político, feche a loja em vez de confiscar o comprador.
+
+Perguntas abertas: O problema é a altura da pilha, ou é a escada que foi usada para chegar lá? Existe um teto ético à riqueza (Robeyns), ou qualquer teto é uma violação de liberdade? O perigo é o bilionário ter poder demais, ou o Estado ter poder vendável demais?</itunes:summary>
+      <itunes:author>Leo Borja</itunes:author>
+      <itunes:duration>36:48</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-03-bilionarios/podcast.mp3" length="17668614" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Educação: pública, privada, e quem paga a conta</title>
+      <link>https://contraponto.leoborja.com.br/#2026-07-30-educacao-publica-privada</link>
+      <guid isPermaLink="false">2026-07-30-educacao-publica-privada</guid>
+      <pubDate>Thu, 30 Jul 2026 12:00:00 +0000</pubDate>
+      <description>Esquerda: A escola comum é a instituição fundadora da cidadania, e 70 anos de vouchers provam: onde o mercado rodou solto (Chile, Louisiana, Suécia) deu segregação sem aprendizado — a vantagem da privada some controlando renda. Sobral mostra o caminho: escola estatal de pobre pode ser a 1ª do país com Estado forte, alfabetização na idade certa, professor valorizado e gestão profissional. Prioridade: recurso novo maciço na base (novo Fundeb) pago por imposto progressivo, mantendo a gratuidade universal como muralha.
+
+Direita: O Estado deve FINANCIAR educação, não precisa OPERAR escolas (Friedman 1955): o sistema atual já é um mercado onde só o rico escolhe. Chile e Louisiana condenam o desenho, não a escolha: a Holanda (70% de escolas privadas, 100% de verba pública, regulação dura) funciona há um século. Dinheiro importa (concedido, Jackson), mas o escândalo brasileiro é gastar ao contrário: 3x mais no superior que na base, FIES maior que o reforço ao Fundeb. Sobral venceu com mecanismos de accountability: mérito, avaliação e consequência.
+
+Perguntas abertas: Cobrar mensalidade de quem pode no superior público, ou proteger a gratuidade universal como muralha contra o desfinanciamento? A escolha regulada à holandesa sobreviveria num Brasil de fiscalização frágil? O que a inteligência artificial faz com a sala de aula nos próximos dez anos?</description>
+      <itunes:summary>Esquerda: A escola comum é a instituição fundadora da cidadania, e 70 anos de vouchers provam: onde o mercado rodou solto (Chile, Louisiana, Suécia) deu segregação sem aprendizado — a vantagem da privada some controlando renda. Sobral mostra o caminho: escola estatal de pobre pode ser a 1ª do país com Estado forte, alfabetização na idade certa, professor valorizado e gestão profissional. Prioridade: recurso novo maciço na base (novo Fundeb) pago por imposto progressivo, mantendo a gratuidade universal como muralha.
+
+Direita: O Estado deve FINANCIAR educação, não precisa OPERAR escolas (Friedman 1955): o sistema atual já é um mercado onde só o rico escolhe. Chile e Louisiana condenam o desenho, não a escolha: a Holanda (70% de escolas privadas, 100% de verba pública, regulação dura) funciona há um século. Dinheiro importa (concedido, Jackson), mas o escândalo brasileiro é gastar ao contrário: 3x mais no superior que na base, FIES maior que o reforço ao Fundeb. Sobral venceu com mecanismos de accountability: mérito, avaliação e consequência.
+
+Perguntas abertas: Cobrar mensalidade de quem pode no superior público, ou proteger a gratuidade universal como muralha contra o desfinanciamento? A escolha regulada à holandesa sobreviveria num Brasil de fiscalização frágil? O que a inteligência artificial faz com a sala de aula nos próximos dez anos?</itunes:summary>
+      <itunes:author>Leo Borja</itunes:author>
+      <itunes:duration>27:34</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-07-30-educacao-publica-privada/podcast.mp3" length="13239710" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>O modelo Bukele: segurança a qualquer preço?</title>
+      <link>https://contraponto.leoborja.com.br/#2026-07-29-modelo-bukele</link>
+      <guid isPermaLink="false">2026-07-29-modelo-bukele</guid>
+      <pubDate>Wed, 29 Jul 2026 11:00:00 +0000</pubDate>
+      <description>Esquerda: A queda da violência é real, mas parte dela nasceu de um pacto secreto com as gangues — e o preço do regime de exceção (8.000 inocentes presos, 350+ mortos na custódia, corte demitida, reeleição indefinida) é uma armadilha que fica armada: montada pro ladrão, um dia dispara em quem o dono quiser. No Brasil, prisão em massa sem controle já foi testada — e fundou o CV e o PCC. O caminho é instituição, não messias: asfixia financeira, controle prisional real e repressão cirúrgica.
+
+Direita: 106 → 1,4 homicídios por 100 mil: milhares de pobres vivos por ano. Segurança é a primeira liberdade (Hobbes) — sem o monopólio estatal da violência, nenhum direito existe; e quem pedia o modelo era o pobre extorquido. O mecanismo não é 'prender muito', é o controle total pós-prisão (fim do QG carcerário). Mas o apoio tem fronteira: o capítulo 2 (corte demitida, reeleição sem limite) não é segurança, é um homem removendo os freios — e liberal de verdade recusa o presidente vitalício.
+
+Perguntas abertas: A paz salvadorenha sobrevive ao dia em que a popularidade do dono cair? Dá pra ter o capítulo 1 (retomada do monopólio da violência) sem o capítulo 2 (o trono)? Quando 85% apoiam a armadilha, quem sobra pra perguntar em quem mais ela vai disparar?</description>
+      <itunes:summary>Esquerda: A queda da violência é real, mas parte dela nasceu de um pacto secreto com as gangues — e o preço do regime de exceção (8.000 inocentes presos, 350+ mortos na custódia, corte demitida, reeleição indefinida) é uma armadilha que fica armada: montada pro ladrão, um dia dispara em quem o dono quiser. No Brasil, prisão em massa sem controle já foi testada — e fundou o CV e o PCC. O caminho é instituição, não messias: asfixia financeira, controle prisional real e repressão cirúrgica.
+
+Direita: 106 → 1,4 homicídios por 100 mil: milhares de pobres vivos por ano. Segurança é a primeira liberdade (Hobbes) — sem o monopólio estatal da violência, nenhum direito existe; e quem pedia o modelo era o pobre extorquido. O mecanismo não é 'prender muito', é o controle total pós-prisão (fim do QG carcerário). Mas o apoio tem fronteira: o capítulo 2 (corte demitida, reeleição sem limite) não é segurança, é um homem removendo os freios — e liberal de verdade recusa o presidente vitalício.
+
+Perguntas abertas: A paz salvadorenha sobrevive ao dia em que a popularidade do dono cair? Dá pra ter o capítulo 1 (retomada do monopólio da violência) sem o capítulo 2 (o trono)? Quando 85% apoiam a armadilha, quem sobra pra perguntar em quem mais ela vai disparar?</itunes:summary>
+      <itunes:author>Leo Borja</itunes:author>
+      <itunes:duration>27:42</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-07-29-modelo-bukele/podcast.mp3" length="13303239" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Renda Básica Universal: o dossiê completo</title>
+      <link>https://contraponto.leoborja.com.br/#2026-07-22-renda-basica-universal</link>
+      <guid isPermaLink="false">2026-07-22-renda-basica-universal</guid>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0000</pubDate>
+      <description>Esquerda: A renda básica é dividendo de uma riqueza comum (Paine → dados e IA), não caridade: elimina a armadilha da pobreza, o estigma e o erro de exclusão da focalização, e a evidência (Quênia, Alasca, anos 70) mostra efeito pequeno e às vezes virtuoso sobre o trabalho. Financiamento: consolidar renúncias regressivas + imposto progressivo + dividendos de ativos públicos.
+
+Direita: A renda garantida moderna nasceu na direita (Friedman/NIT, Hayek, Nixon), mas universal e generosa nunca foi testada: os 4 maiores pilotos mostraram -3,2pp de emprego, e o programa permanente é uma incógnita que não justifica apostar o orçamento. Melhor um NIT com rampa de 50%, financiado consolidando o que já se gasta — e jamais com emissão (Irã).
+
+Perguntas abertas: Um programa generoso, nacional e PERMANENTE muda o comportamento de uma geração de um jeito que nenhum piloto captura? A IA vai quebrar, desta vez, o padrão de 200 anos em que a tecnologia destrói empregos e cria outros tantos? Existe coalizão política capaz de atravessar alguma das 5 portas de financiamento?</description>
+      <itunes:summary>Esquerda: A renda básica é dividendo de uma riqueza comum (Paine → dados e IA), não caridade: elimina a armadilha da pobreza, o estigma e o erro de exclusão da focalização, e a evidência (Quênia, Alasca, anos 70) mostra efeito pequeno e às vezes virtuoso sobre o trabalho. Financiamento: consolidar renúncias regressivas + imposto progressivo + dividendos de ativos públicos.
+
+Direita: A renda garantida moderna nasceu na direita (Friedman/NIT, Hayek, Nixon), mas universal e generosa nunca foi testada: os 4 maiores pilotos mostraram -3,2pp de emprego, e o programa permanente é uma incógnita que não justifica apostar o orçamento. Melhor um NIT com rampa de 50%, financiado consolidando o que já se gasta — e jamais com emissão (Irã).
+
+Perguntas abertas: Um programa generoso, nacional e PERMANENTE muda o comportamento de uma geração de um jeito que nenhum piloto captura? A IA vai quebrar, desta vez, o padrão de 200 anos em que a tecnologia destrói empregos e cria outros tantos? Existe coalizão política capaz de atravessar alguma das 5 portas de financiamento?</itunes:summary>
+      <itunes:author>Leo Borja</itunes:author>
+      <itunes:duration>33:09</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-07-22-renda-basica-universal/podcast.mp3" length="15919664" type="audio/mpeg"/>
+    </item>
+  </channel>
+</rss>
