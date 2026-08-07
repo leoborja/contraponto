@@ -141,7 +141,7 @@ Modelo `eleven_multilingual_v2`, PT-BR.
   - Capa do feed é `docs/cover.png` em **1400x1400** (mínimo da Apple; a `logo.png` tem 1024 e seria rejeitada). Regerar com `Image.open('docs/logo.png').resize((1400,1400), Image.LANCZOS)`
   - Config no topo do `publish.py`: `EMAIL_OWNER` fica **público** no feed e é exigido pela Apple para verificar titularidade. Categoria atual: News > Politics
   - Botão "Assinar no seu app de podcast" no header copia a URL do feed (clicar em `/feed.xml` mostraria XML cru). Autodiscovery via `<link rel="alternate">`
-  - **Pendente**: submeter o feed ao Spotify for Podcasters e ao Apple Podcasts Connect. O Spotify entrega métricas de retenção, que é o dado que falta para avaliar roteiro com evidência em vez de impressão
+  - **Submetido ao Spotify em 7/ago/2026** (aguardando aprovação, leva algumas horas). Pendente: Apple Podcasts Connect. O Spotify entrega métricas de retenção, que é o dado que falta para avaliar roteiro com evidência em vez de impressão
 - Logo: `docs/logo.png` (header/capa) + `docs/icon.png` (favicon, crop do mic). Conceitos alternativos em `branding/`. Gerada com Gemini `gemini-3-pro-image` (key em `~/livro-colorir/.env`)
 
 ## Episódios publicados
