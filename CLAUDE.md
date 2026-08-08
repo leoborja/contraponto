@@ -41,7 +41,7 @@ Cada personagem tem UM eixo em que não concede nada e defende a versão forte d
 **Corolário**: a tese radical tem que ser defendida por quem acredita nela, nunca ensinada pelo Sócrates. Colocar a posição maximalista na boca do narrador a neutraliza.
 
 #### Peso das vozes
-- **Narrador no máximo 35% das palavras.** Nos eps. 1 a 4 ficou entre 41% e 50%: o formato está derivando de debate para aula com ilustrações de debate
+- **Narrador no máximo 35% das palavras.** ⚠️ **CORREÇÃO de 8/ago**: eu havia escrito aqui que "nos eps. 1 a 4 ficou entre 41% e 50%". **Isso estava errado.** Medindo: ep. 1 = 25%, ep. 2 = 31%, ep. 3 = 22%, ep. 4 = 41%. **Só o ep. 4 estourou.** Eu medi um episódio, generalizei para quatro e escrevi como fato. A regra do teto segue válida, a justificativa histórica não era
 - **Os números vão para os personagens.** Dado técnico na boca de quem discute é argumento; na boca do professor é conteúdo. O Sócrates fica com definição, arbitragem e o fecho
 - Medir **monólogo**, não só duração: nenhum bloco sem contraditório acima de ~4 min (o ep. 4 tinha 11)
 
@@ -110,6 +110,23 @@ Cada item exige o número do turno que prova o cumprimento:
 Toda lacuna do painel adversarial recebe um destino explícito: **corrigida** (com o turno) ou **descartada** (com o motivo escrito). Não existe "declarada e mantida".
 
 **Por que esta regra existe**: no ep. 5 eu escrevi no próprio review que o episódio "discute custo e proteção, nunca resultado (…) é a maior lacuna, e é honesta" — e não fiz nada. Usei a declaração de limitação como absolvição. É a versão sofisticada de não fazer o trabalho.
+
+#### Placar histórico pelo revisor v3 (medido em 8/ago/2026)
+Os eixos objetivos foram medidos; os qualitativos dos eps. 1 a 4 são estimativa a partir dos artefatos, sem releitura integral.
+
+| Ep | Tema | v3 | O que derruba (a menor nota) | Nota antiga |
+|---|---|---|---|---|
+| 1 | RBU | **7,0** | ouvido — 23 violações de TTS | 9/9/9 |
+| 2 | Bukele | **5,0** | ouvido — **110 violações**, os travessões | 9/9/9/9 |
+| 3 | Educação | **7,5** | equilíbrio — "Milton concede muito" (do próprio review) | 9/9/9/9 |
+| 4 | Bilionários | **6,0** | fidelidade e acionabilidade — 6 casos, 41% narrador, 6,5 min de monólogo | 8,88 |
+| 5 | Funcionalismo | **4,0** | acionabilidade — 3 casos concretos no episódio inteiro | 9,12 |
+| 6 | Funcionalismo 2 | **8,5** | equilíbrio | — |
+| 7 | Jornada | **8,0** | ouvido — 35 a 38 min | — |
+
+**Duas leituras que importam:**
+1. **O projeto só passa do limiar de 7 a partir do ep. 6**, quando as regras entraram. Antes disso, o revisor dava 9 em tudo e não discriminava nada.
+2. **A acionabilidade REGREDIU no meio da série.** Contagem de casos concretos nomeados por episódio: **23, 26, 31, 6, 3, 37, 18**. Os eps. 1 a 3 eram muito mais concretos que os 4 e 5. Eu fui ficando abstrato sem perceber, porque nenhuma métrica minha olhava para isso. O fundo do poço foi exatamente o episódio que o Leo criticou.
 
 #### Previsão falsificável (fecha o loop)
 O review termina respondendo: **"se o Leo reclamar de algo neste episódio, do que vai ser?"** A previsão fica registrada e é comparada com o que ele realmente disser. Histórico: no ep. 4 eu não previ (a crítica dele nem estava no review); no ep. 5 eu previ e ignorei. Um de dois previstos, e o previsto foi desperdiçado.
