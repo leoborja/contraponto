@@ -55,7 +55,7 @@ Cada personagem tem UM eixo em que não concede nada e defende a versão forte d
   - NUNCA travessão (—) | NUNCA reticências (...) | enumerações de no máx. 2 itens por vírgula (listas longas viram frase corrida com "e")
   - `audio.py:normalizar_tts()` limpa —/... como rede de segurança, mas enumeração é estilo: escrever certo na fonte
   - Números por extenso ("três vírgula dois pontos percentuais")
-- **Alvo**: 4.200-4.800 palavras ≈ 27-31 min. **Calibração real medida**: 147-160 wpm (ep. 3: 4.065 palavras = 27:34 → 147 wpm; ep. 5: 4.609 = 29:33 → 156 wpm; ep. 4: 5.873 = 36:48 → 160 wpm). O `settings.yaml` assume 165, que subestima a duração — usar a faixa medida para estimar
+- **Alvo**: 4.200-4.800 palavras ≈ 27-31 min, **mas é referência e não teto** (feedback do Leo em 10/ago). Passar disso é aceitável se cada bloco adicionar argumento novo; o que não é aceitável é repetir. Eps. 1 a 7 ficaram entre 26 e 38 min e o Leo nunca reclamou de duração — reclamou de falta de casos concretos (ep. 5) e de convergência (ep. 4). **Calibração real medida**: 147-160 wpm (ep. 3: 4.065 palavras = 27:34 → 147 wpm; ep. 5: 4.609 = 29:33 → 156 wpm; ep. 4: 5.873 = 36:48 → 160 wpm). O `settings.yaml` assume 165, que subestima a duração — usar a faixa medida para estimar
 
 ### 3.5 Revisor v3 (reescrito em 5/ago após o Leo pedir mais autocrítica)
 
@@ -83,7 +83,11 @@ Um episódio 9/9/9/5 é um episódio **5**. O ouvinte sente a falha, não a méd
 #### Os seis eixos (0-10 cada)
 1. **Equilíbrio** — simetria de concessões e de qualidade dos argumentos
 2. **Factual** — números conferidos, fontes atuais, nada apresentado fora de contexto
-3. **Ouvido** — cold open, ritmo, TTS, peso das vozes, monólogo
+3. **Ouvido** — cold open, ritmo, TTS, peso das vozes, monólogo, e **prolixidade**
+   - ⚠️ **CORREÇÃO de 10/ago (feedback do Leo)**: este eixo mede **prolixidade, NÃO duração**. *"não queria ser tão duro com a parte de tempo de episódio! só não ser prolixo, mas não tem problema ser um pouco maior."*
+   - **Episódio mais longo não perde nota.** 36 min densos > 28 min repetitivos. O que perde nota é gordura: repetir o mesmo dado, frase que não adiciona, exemplo redundante
+   - **Como medir prolixidade** (objetivo, não impressão): contar n-gramas de 6 a 7 palavras repetidos literalmente, e conceitos-chave ditos mais de 2x fora do fecho. No ep. 7 isso achou "vinte e um dólares por hora" 3x e "noventa e nove por cento dos negócios" 2x — repetição real, cortada. Repetição NO FECHO é intencional (a estrutura "se levar três coisas") e não conta
+   - Eu penalizei o ep. 7 duas vezes por ter 36 min, o que estava errado: o critério era meu, não do Leo
 4. **Profundidade** — o ouvinte aprendeu algo que não acharia num resumo
 5. **Acionabilidade** *(novo, ep. 5)* — cada eixo tem ao menos um caso concreto, de preferência brasileiro, e o episódio diz o que já funcionou em algum lugar. Explicar por que o problema é difícil sem dizer o que se faz com ele é meio trabalho
 6. **Fidelidade à pergunta** *(novo, ep. 4)* — a Regra Zero como NOTA, não como caixinha de sim/não
