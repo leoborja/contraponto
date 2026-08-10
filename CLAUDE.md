@@ -82,6 +82,8 @@ Um episódio 9/9/9/5 é um episódio **5**. O ouvinte sente a falha, não a méd
 
 #### Os seis eixos (0-10 cada)
 1. **Equilíbrio** — simetria de concessões e de qualidade dos argumentos
+   - ⚠️ **DÍVIDA ABERTA, diagnosticada 2x e nunca corrigida: a ÚLTIMA PALAVRA.** O review do ep. 6 registra "Friedman ganha o último turno de quase todos os casos" e o do ep. 7 registra "Friedman fecha mais eixos com a última palavra". Dois episódios, mesmo resíduo, zero ação. É o candidato mais provável a gargalo do ep. 8, porque equilíbrio já é uma das menores notas
+   - **Como medir**: contar quem fala por último em cada eixo. Teto sugerido de 60% para um lado. Percentual de palavras igual (37% x 37% no ep. 7) NÃO capta isso, porque quem fecha o bloco leva a impressão de vitória mesmo empatando no volume
 2. **Factual** — números conferidos, fontes atuais, nada apresentado fora de contexto
 3. **Ouvido** — cold open, ritmo, TTS, peso das vozes, monólogo, e **prolixidade**
    - ⚠️ **CORREÇÃO de 10/ago (feedback do Leo)**: este eixo mede **prolixidade, NÃO duração**. *"não queria ser tão duro com a parte de tempo de episódio! só não ser prolixo, mas não tem problema ser um pouco maior."*
@@ -90,6 +92,9 @@ Um episódio 9/9/9/5 é um episódio **5**. O ouvinte sente a falha, não a méd
    - Eu penalizei o ep. 7 duas vezes por ter 36 min, o que estava errado: o critério era meu, não do Leo
 4. **Profundidade** — o ouvinte aprendeu algo que não acharia num resumo
 5. **Acionabilidade** *(novo, ep. 5)* — cada eixo tem ao menos um caso concreto, de preferência brasileiro, e o episódio diz o que já funcionou em algum lugar. Explicar por que o problema é difícil sem dizer o que se faz com ele é meio trabalho
+   - ⚠️ **REFINAMENTO de 10/ago: acionabilidade tem DOIS níveis, e o Leo cobra o segundo.** Nível **político** (o que o Congresso ou o governo deveria fazer) e nível **pessoal** (o que o ouvinte faz na segunda-feira de manhã). Os eps. 4 e 5, as duas piores notas da série, tinham só o político. O salto de 8,5 para 9,5 no ep. 7 foi exatamente adicionar o pessoal: a NR-1, a comunicação de acidente de trabalho e a denúncia ao MPT, que valem HOJE e não dependem da PEC
+   - A redação antiga ("ao menos um caso concreto por eixo") é uma condição que o ep. 5 poderia cumprir e ainda assim frustrar. **A pergunta certa é: o ouvinte sai com uma frase que ele pode repetir numa reunião ou usar na própria vida?**
+   - Bônus observado: o bloco pessoal saiu **de graça em equilíbrio**, porque os dois personagens discordam sobre a lei do início ao fim e concordam inteiramente sobre o que uma pessoa pode fazer amanhã. Isso é material de fecho, não de meio
 6. **Fidelidade à pergunta** *(novo, ep. 4)* — a Regra Zero como NOTA, não como caixinha de sim/não
 
 #### Painel adversarial (quatro ataques, escritos por extenso)
@@ -98,6 +103,26 @@ Não basta responder "ok". Cada um escreve a crítica mais dura que conseguir:
 - **O militante de esquerda**: onde o Marx foi mal defendido ou virou espantalho?
 - **O militante de direita**: onde o Friedman foi mal defendido ou virou espantalho?
 - **O ouvinte no trânsito**: em que minuto eu desliguei? e o que eu faço com isso na segunda-feira?
+
+#### ⚠️ REGRA DE OURO DO CHECKLIST (descoberta em 10/ago, a mais importante desta seção)
+**Item de checklist sem comando associado converge para "OK" automático.** Não é preguiça pontual: é o comportamento padrão de quem verifica a si mesmo.
+
+**Prova**: o review do ep. 7 declarava "0 enumerações de 3+" e havia **6** no `script.json` em disco (turnos 41, 61, 88, 108, 116 e 117 — ex.: *"randomizar a seleção das empresas, escolher grupo de comparação válido, dar acesso transparente aos dados e usar amostras maiores"*, quatro itens). Passou porque meu detector contava vírgulas, gerava falsos positivos com apostos, e eu descartei o lote inteiro como falso positivo **sem olhar item por item**. E o `normalizar_tts()` NÃO conserta enumeração — ele só limpa travessão e reticência. Foi um agente externo lendo o arquivo que encontrou.
+
+**Detector correto de enumeração** (filtra apostos exigindo itens curtos e paralelos):
+```python
+import json, re
+t=json.load(open('output/<slug>/script.json'))['turnos']
+for i,x in enumerate(t):
+    for s in re.split(r'(?<=[.!?])\s+', x['text']):
+        m=re.search(r'((?:[^,.;]+,\s*){2,}[^,.;]+\s+e\s+[^,.;]+)', s)
+        if m:
+            itens=[p for p in re.split(r',\s*|\s+e\s+', m.group(1)) if p.strip()]
+            if len(itens)>=3 and all(len(it.split())<=6 for it in itens):
+                print(f"[{i}] {m.group(1)[:90]}")
+```
+
+**Consequência geral**: cada item do checklist abaixo precisa de um comando que retorne número, não de um julgamento meu. Onde não houver comando, presuma que o item nunca foi verificado.
 
 #### Checklist de regressão (com EVIDÊNCIA, não com "sim")
 Cada item exige o número do turno que prova o cumprimento:
@@ -126,7 +151,7 @@ Os eixos objetivos foram medidos; os qualitativos dos eps. 1 a 4 são estimativa
 | 4 | Bilionários | **6,0** | fidelidade e acionabilidade — 6 casos, 41% narrador, 6,5 min de monólogo | 8,88 |
 | 5 | Funcionalismo | **4,0** | acionabilidade — 3 casos concretos no episódio inteiro | 9,12 |
 | 6 | Funcionalismo 2 | **8,5** | equilíbrio | — |
-| 7 | Jornada | **8,0** | ouvido — 35 a 38 min | — |
+| 7 | Jornada | **9,0** | equilíbrio e ouvido (empatados) — nenhuma falha conhecida sem correção | — |
 
 **Duas leituras que importam:**
 1. **O projeto só passa do limiar de 7 a partir do ep. 6**, quando as regras entraram. Antes disso, o revisor dava 9 em tudo e não discriminava nada.
@@ -172,9 +197,10 @@ Modelo `eleven_multilingual_v2`, PT-BR.
 4. **Deveriam existir bilionários?** (36:48, 3/ago) — Musk cruza US$ 1 tri (jun/26), Nozick em vez do argumento meritocrático, Bagchi-Svejnar (riqueza politicamente conectada arrasta crescimento; Brasil 27%, EUA 1%), Zucman (0,3% de imposto efetivo vs 7,5% de retorno), bloco da régua de pobreza (linha subiu 40% em jun/25 sem ninguém empobrecer)
 6. **Funcionalismo, parte 2: o que de fato funciona** (30:10, 6/ago) — complemento do ep. 5 para pagar a dívida de acionabilidade (nota 4,0 no revisor v3). Formato novo: **julgamento de casos** em vez de eixos temáticos, cada caso respondendo funcionou/por quê/dá para copiar. Sobral (1.407º → 1º do Brasil sem tirar estabilidade), PAIC/Ceará (Lei 14.026/2007, 184 municípios), gov.br (R$ 38 bi e 150 mi de horas/ano, zero demissões), reforma tributária, OSS de SP (TCE achou administração direta mais barata), Nova Zelândia (lei de 1988 revogada em 2020), ENAP (nos 6 casos examinados ninguém avalia produtividade). Abre se corrigindo: a comparação OCDE do ep. 5 não era homogênea. **Nota v3: 8,5**
 5. **Funcionalismo público: estabilidade é proteção ou privilégio?** (29:33, 5/ago) — 1º episódio sob a Regra Zero; cold open do assassinato de Garfield por um caçador de emprego público (1881) → Pendleton Act; Brasil tem 12,1% da força de trabalho no setor público vs 20,8% OCDE mas gasta 13,5% do PIB vs 9,3% (Estado em formato de taça); EC 19/1998 já permite demitir por desempenho e a lei complementar nunca veio (28 anos); déficit militar de R$ 159 mil/beneficiário vs R$ 9,4 mil no INSS; vitaliciedade ≠ estabilidade
+7. **Jornada de trabalho: a jornada deveria ser reduzida por lei?** (37:45, 7/ago) — cold open da folga que cai em dia útil (folga na quarta, escola do filho aberta, ninguém para conviver: não aparece em estudo de PIB nenhum). Atualidade: a **PEC 221/19** (fim da escala 6x1) foi aprovada na Câmara em dois turnos por **461 a 19 em 27/mai/2026** e está no Senado passando por comissões (já passou pela CCJ); transição prevista de 44→42h em 60 dias e 42→40h em 14 meses, sem redução de salário. O **estudo do FGV IBRE**, o mais citado contra a proposta, **declara por escrito que mantém "produtividade por hora e nível de emprego constantes"** — ou seja, assume que o mecanismo central defendido pelo outro lado quase não opera (IPEA calcula 1% de aumento de custo operacional). O **INSEE** achou **queda de 3,7% de produtividade** nas empresas francesas que adotaram as 35h, único caso de lei nacional comparável (Tirole chama de equívoco; França flexibilizou em 2003). O paper de **Cuello (JRC, Comissão Europeia)** demole o desenho dos pilotos: **todos os do setor privado analisados usam comparação antes-e-depois** (uma única exceção), método de alto risco porque supõe que nada mais mudou numa economia saindo de pandemia, e **a tentativa de montar grupo de comparação não entrou no relatório final** porque "não pareceu funcionar"; o piloto ainda acha efeito significativo em custo de creche, que não tem relação com semana de quatro dias. Contraponto de método pela esquerda: a Alemanha **teve** grupo de controle (7,7 vs 6,8, 73% mantiveram). Fecho onde os dois concordam: a **NR-1** (fiscalização de risco psicossocial em vigor desde este ano) é o que já vale hoje sem PEC nenhuma, porque cobra da empresa o resultado (trabalhador não adoecer) sem dizer quantas horas usar. **Nota v3: 9,0, a maior da série** (factual 9,5, profundidade 9,5, acionabilidade 9,5, equilíbrio e ouvido 9,0). Lição do processo: quatro rodadas de melhoria subiram o factual de 8,0 para 9,5 sem mover a nota final, porque cada inserção empurrou a duração e derrubou o ouvido (efeito cobertor curto) → fixar orçamento de palavras no curriculum
 
 ## Backlog de temas (Leo escolhe)
-Fim da escala 6x1 / semana de 4 dias · Legalizar drogas (Portugal vs Oregon) · Controle de aluguel e crise da moradia · Regular a IA (AI Act vs EUA vs PL 2338) · Nuclear na transição energética · Privatizar ou não (Correios/Sabesp/Petrobras) · **Medição e estatística política** (sobra do ep. 4: Pritchett, Reddy-Pogge, Ravallion, medidas FGT, MPI, Dinamarca×Paquistão — pesquisa já feita em `output/2026-08-03-bilionarios/curriculum.json`)
+Legalizar drogas (Portugal vs Oregon) · Controle de aluguel e crise da moradia · Regular a IA (AI Act vs EUA vs PL 2338) · Nuclear na transição energética · Privatizar ou não (Correios/Sabesp/Petrobras) · **Medição e estatística política** (sobra do ep. 4: Pritchett, Reddy-Pogge, Ravallion, medidas FGT, MPI, Dinamarca×Paquistão — pesquisa já feita em `output/2026-08-03-bilionarios/curriculum.json`)
 
 ## Histórico de lições (não repetir erros)
 - Travessões quebraram a entonação do ep. 2 (75 ocorrências) → regras TTS acima + normalizador

@@ -9,7 +9,7 @@
     <atom:link href="https://contraponto.leoborja.com.br/feed.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
     <copyright>Leo Borja</copyright>
-    <lastBuildDate>Thu, 06 Aug 2026 16:54:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 18:18:59 +0000</lastBuildDate>
     <description>Podcast de debate político gerado por IA. Cada episódio pega um tema em disputa e monta um debate profundo entre dois personagens que discordam de verdade, Karl Marx e Milton Friedman, mediados por Sócrates, que ensina o tema antes do debate e fecha mostrando onde os dois concordam e quais perguntas seguem abertas.</description>
     <itunes:summary>Podcast de debate político gerado por IA. Cada episódio pega um tema em disputa e monta um debate profundo entre dois personagens que discordam de verdade, Karl Marx e Milton Friedman, mediados por Sócrates, que ensina o tema antes do debate e fecha mostrando onde os dois concordam e quais perguntas seguem abertas.</itunes:summary>
     <itunes:author>Leo Borja</itunes:author>
@@ -28,6 +28,28 @@
     <itunes:category text="News">
       <itunes:category text="Politics"/>
     </itunes:category>
+    <item>
+      <title>Jornada de trabalho: a jornada deveria ser reduzida por lei?</title>
+      <link>https://contraponto.leoborja.com.br/#2026-08-07-jornada-de-trabalho</link>
+      <guid isPermaLink="false">2026-08-07-jornada-de-trabalho</guid>
+      <pubDate>Fri, 07 Aug 2026 16:00:00 +0000</pubDate>
+      <description>Esquerda: Sim, por lei, e sem esperar negociação. Não existe um país em que a jornada tenha caído porque patrão e empregado acharam razoável: as oito horas foram arrancadas por lei em todo lugar, e antes disso criança de nove anos trabalhava doze horas porque o contrato era livre. A jornada se divide entre o tempo em que o trabalhador produz o próprio salário e o tempo em que produz valor que não volta para ele, e esticar o dia é a forma mais bruta de aumentar a segunda parte. Além disso, o Brasil já trabalha 40,1 horas por semana e produz 21,2 dólares por hora, o 94º lugar entre 184 países: a tese de que nossa pobreza vem de trabalhar pouco não sobrevive a esse número.
+
+Direita: Não por lei. Há diferença entre proibir o que fere a integridade da pessoa (trabalho infantil, insalubridade) e proibir um arranjo que um adulto informado aceita. Quando o Estado proíbe um tipo de acordo, não faz aparecer um acordo melhor: faz desaparecer o que existia, e quem desaparece com ele é quem tem menos alternativa, num país com 39% de informalidade e onde micro e pequenas empresas são 99% dos negócios. A França é o único caso de lei nacional comparável, e o instituto oficial de estatística de lá encontrou queda de 3,7% de produtividade nas empresas que adotaram as 35 horas.
+
+Perguntas abertas: Um trabalhador que aceita seis dias por semana porque precisa do salário está exercendo liberdade de contrato ou está apenas sem outra opção? Se a jornada nunca caiu por negociação, e a única lei nacional comparável teve que ser flexibilizada, qual é o instrumento que de fato funciona? Por que ninguém testou a semana reduzida no comércio de rua, que é onde estão os 31,7 milhões de brasileiros da escala 6x1?</description>
+      <itunes:summary>Esquerda: Sim, por lei, e sem esperar negociação. Não existe um país em que a jornada tenha caído porque patrão e empregado acharam razoável: as oito horas foram arrancadas por lei em todo lugar, e antes disso criança de nove anos trabalhava doze horas porque o contrato era livre. A jornada se divide entre o tempo em que o trabalhador produz o próprio salário e o tempo em que produz valor que não volta para ele, e esticar o dia é a forma mais bruta de aumentar a segunda parte. Além disso, o Brasil já trabalha 40,1 horas por semana e produz 21,2 dólares por hora, o 94º lugar entre 184 países: a tese de que nossa pobreza vem de trabalhar pouco não sobrevive a esse número.
+
+Direita: Não por lei. Há diferença entre proibir o que fere a integridade da pessoa (trabalho infantil, insalubridade) e proibir um arranjo que um adulto informado aceita. Quando o Estado proíbe um tipo de acordo, não faz aparecer um acordo melhor: faz desaparecer o que existia, e quem desaparece com ele é quem tem menos alternativa, num país com 39% de informalidade e onde micro e pequenas empresas são 99% dos negócios. A França é o único caso de lei nacional comparável, e o instituto oficial de estatística de lá encontrou queda de 3,7% de produtividade nas empresas que adotaram as 35 horas.
+
+Perguntas abertas: Um trabalhador que aceita seis dias por semana porque precisa do salário está exercendo liberdade de contrato ou está apenas sem outra opção? Se a jornada nunca caiu por negociação, e a única lei nacional comparável teve que ser flexibilizada, qual é o instrumento que de fato funciona? Por que ninguém testou a semana reduzida no comércio de rua, que é onde estão os 31,7 milhões de brasileiros da escala 6x1?</itunes:summary>
+      <itunes:author>Leo Borja</itunes:author>
+      <itunes:duration>37:45</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-07-jornada-de-trabalho/podcast.mp3" length="18121891" type="audio/mpeg"/>
+    </item>
     <item>
       <title>Funcionalismo, parte 2: o que de fato funciona</title>
       <link>https://contraponto.leoborja.com.br/#2026-08-06-funcionalismo-parte-2</link>

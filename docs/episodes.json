@@ -2,6 +2,101 @@
   "podcast": "Contraponto",
   "episodes": [
     {
+      "slug": "2026-08-07-jornada-de-trabalho",
+      "titulo": "Jornada de trabalho: a jornada deveria ser reduzida por lei?",
+      "tema": "Jornada de trabalho: a jornada deveria ser reduzida por lei?",
+      "data": "2026-08-07",
+      "duracao_seg": 2265,
+      "audio": "episodes/2026-08-07-jornada-de-trabalho/podcast.mp3",
+      "tese_esquerda": "Sim, por lei, e sem esperar negociação. Não existe um país em que a jornada tenha caído porque patrão e empregado acharam razoável: as oito horas foram arrancadas por lei em todo lugar, e antes disso criança de nove anos trabalhava doze horas porque o contrato era livre. A jornada se divide entre o tempo em que o trabalhador produz o próprio salário e o tempo em que produz valor que não volta para ele, e esticar o dia é a forma mais bruta de aumentar a segunda parte. Além disso, o Brasil já trabalha 40,1 horas por semana e produz 21,2 dólares por hora, o 94º lugar entre 184 países: a tese de que nossa pobreza vem de trabalhar pouco não sobrevive a esse número.",
+      "tese_direita": "Não por lei. Há diferença entre proibir o que fere a integridade da pessoa (trabalho infantil, insalubridade) e proibir um arranjo que um adulto informado aceita. Quando o Estado proíbe um tipo de acordo, não faz aparecer um acordo melhor: faz desaparecer o que existia, e quem desaparece com ele é quem tem menos alternativa, num país com 39% de informalidade e onde micro e pequenas empresas são 99% dos negócios. A França é o único caso de lei nacional comparável, e o instituto oficial de estatística de lá encontrou queda de 3,7% de produtividade nas empresas que adotaram as 35 horas.",
+      "consenso": [
+        "O Brasil trabalha muitas horas e produz pouco por hora, e essa combinação é o problema de fundo, não a jornada isoladamente",
+        "As três estimativas brasileiras (IPEA 1%, CNC 21%, FGV IBRE -2,8% do PIB) não cabem no mesmo mundo, e nenhuma das instituições é parte desinteressada",
+        "A folga em dia útil é um custo real de qualidade de vida que nenhum estudo de PIB captura",
+        "Nenhum piloto de semana reduzida no mundo testou o setor que mais usa a escala 6x1 no Brasil: comércio de rua, supermercado e farmácia, com horário fixo de funcionamento",
+        "Se a produtividade não subir, alguém paga a conta, e o debate honesto é sobre quem paga",
+        "Um piloto obrigatório com grupo de controle no comércio presencial, com prazo fechado e vigência automática ao fim, é melhor desenho que o que está em votação",
+        "O uso público de um número sem a premissa que o gerou é propaganda com o trabalho de outra pessoa"
+      ],
+      "perguntas_abertas": [
+        "Um trabalhador que aceita seis dias por semana porque precisa do salário está exercendo liberdade de contrato ou está apenas sem outra opção?",
+        "Se a jornada nunca caiu por negociação, e a única lei nacional comparável teve que ser flexibilizada, qual é o instrumento que de fato funciona?",
+        "Por que ninguém testou a semana reduzida no comércio de rua, que é onde estão os 31,7 milhões de brasileiros da escala 6x1?",
+        "Colocar jornada na Constituição protege o trabalhador ou tira do país a capacidade de corrigir se der errado?"
+      ],
+      "fontes": [
+        {
+          "titulo": "Câmara aprova em dois turnos a PEC pelo fim da escala 6x1 (461 a 19, em 27/mai/2026)",
+          "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-05/camara-aprova-em-dois-turnos-pec-pelo-fim-da-escala-6x1"
+        },
+        {
+          "titulo": "Senado Verifica — o que é verdade sobre as propostas de fim da escala 6x1",
+          "url": "https://www12.senado.leg.br/verifica/materias-especiais/2026/fim-da-escala-6x1-foi-aprovado-veja-o-que-e-verdade-sobre-as-propostas-em-debate"
+        },
+        {
+          "titulo": "FGV IBRE — O impacto econômico imediato do fim da escala 6x1 (declara a premissa de produtividade constante)",
+          "url": "https://blogdoibre.fgv.br/posts/o-impacto-economico-imediato-do-fim-da-escala-de-trabalho-6x1"
+        },
+        {
+          "titulo": "Estudos divergem sobre impactos no PIB e na inflação (IPEA 1% contra CNC 21%)",
+          "url": "https://movimentoeconomico.com.br/economia/emprego/2026/04/28/fim-da-escala-6x1-estudos-divergem-sobre-impactos-no-pib-e-na-inflacao/"
+        },
+        {
+          "titulo": "FINDES (entidade PATRONAL) — O que a experiência da França pode ensinar ao Brasil, com dados do INSEE e citação de Tirole",
+          "url": "https://findes.com.br/wp-content/uploads/2025/07/Informe-Estrategico-%E2%80%93-Reducao-da-jornada-de-trabalho-O-que-a-experiencia-da-Franca-pode-ensinar-ao-Brasil.pdf"
+        },
+        {
+          "titulo": "35 horas semanais na França — as leis Aubry I e II",
+          "url": "https://pt.wikipedia.org/wiki/35_horas_semanais_na_Fran%C3%A7a"
+        },
+        {
+          "titulo": "Autonomy Institute (organização de ADVOCACIA) — resultados do piloto britânico de quatro dias",
+          "url": "https://autonomy.work/portfolio/uk4dwpilotresults/"
+        },
+        {
+          "titulo": "CNBC — 92% das empresas do maior piloto do mundo mantiveram a semana de quatro dias",
+          "url": "https://www.cnbc.com/2024/02/22/four-day-working-week-most-firms-in-worlds-biggest-trial-stick-to-it.html"
+        },
+        {
+          "titulo": "Cuello (Joint Research Centre, Comissão Europeia) — Assessing the Validity of Four-day Week Pilots",
+          "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC133008"
+        },
+        {
+          "titulo": "TechTarget — críticas às alegações de produtividade da semana de quatro dias",
+          "url": "https://www.techtarget.com/searchhrsoftware/news/252525395/Four-day-workweek-productivity-claims-gather-criticism"
+        },
+        {
+          "titulo": "Piloto alemão com grupo de controle: 73% das empresas mantiveram",
+          "url": "https://abet-trabalho.org.br/alemanha-testa-sistema-de-4-dias-de-trabalho-e-tem-veredicto-claro-mais-de-70-das-empresas-nao-voltara-para-semana-tradicional-de-5-dias/"
+        },
+        {
+          "titulo": "Bélgica: lei de 2022 é de horas COMPRIMIDAS; menos de 0,8% dos elegíveis adotou",
+          "url": "https://www.newsweek.com/evaluating-belgiums-four-day-workweek-impact-1893298"
+        },
+        {
+          "titulo": "OIT — produtividade brasileira é a 94ª do mundo, 21,2 dólares por hora",
+          "url": "https://fiesc.com.br/pt-br/imprensa/produtividade-brasileira-e-94a-do-mundo-diz-oit"
+        },
+        {
+          "titulo": "Marx, O Capital, Livro I, capítulo 8: A Jornada de Trabalho",
+          "url": "https://www.marxists.org/portugues/marx/1867/capital/livro1/index.htm"
+        },
+        {
+          "titulo": "Löwy — Marx e a luta pela redução da jornada de trabalho",
+          "url": "https://revistas.pucsp.br/index.php/ls/article/download/33240/pdf/99044"
+        },
+        {
+          "titulo": "Friedman e o salário mínimo: o argumento de liberdade de contrato",
+          "url": "https://www.americanexperiment.org/milton-friedman-on-the-minimum-wage/"
+        },
+        {
+          "titulo": "Islândia: o maior piloto do mundo entre 2015 e 2019, e os 86% de hoje",
+          "url": "https://www.xataka.com/empresas-y-economia/islandia-tiene-semana-laboral-cuatro-dias-2019-siete-anos-despues-cumple-todas-promesas-gen-z"
+        }
+      ]
+    },
+    {
       "slug": "2026-08-06-funcionalismo-parte-2",
       "titulo": "Funcionalismo, parte 2: o que de fato funciona",
       "tema": "Funcionalismo, parte 2: o que de fato funciona",
