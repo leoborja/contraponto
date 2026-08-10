@@ -12,7 +12,7 @@ models:
 
 # Alvo do roteiro — vozes ElevenLabs PT-BR falam ~165 palavras/min (calibrado no ep. 1)
 roteiro:
-  palavras_por_minuto: 165
+  palavras_por_minuto: 155
   modos:
     simples:   { palavras_min: 1700, palavras_max: 2200 }   # ~10-13 min
     profundo:  { palavras_min: 4200, palavras_max: 5000 }   # ~25-30 min
