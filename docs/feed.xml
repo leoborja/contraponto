@@ -2,6 +2,7 @@
 <rss version="2.0"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:podcast="https://podcastindex.org/namespace/1.0"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contraponto</title>
@@ -9,7 +10,7 @@
     <atom:link href="https://contraponto.leoborja.com.br/feed.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
     <copyright>Leo Borja</copyright>
-    <lastBuildDate>Mon, 10 Aug 2026 18:18:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 17:10:27 +0000</lastBuildDate>
     <description>Podcast de debate político gerado por IA. Cada episódio pega um tema em disputa e monta um debate profundo entre dois personagens que discordam de verdade, Karl Marx e Milton Friedman, mediados por Sócrates, que ensina o tema antes do debate e fecha mostrando onde os dois concordam e quais perguntas seguem abertas.</description>
     <itunes:summary>Podcast de debate político gerado por IA. Cada episódio pega um tema em disputa e monta um debate profundo entre dois personagens que discordam de verdade, Karl Marx e Milton Friedman, mediados por Sócrates, que ensina o tema antes do debate e fecha mostrando onde os dois concordam e quais perguntas seguem abertas.</itunes:summary>
     <itunes:author>Leo Borja</itunes:author>
@@ -29,6 +30,29 @@
       <itunes:category text="Politics"/>
     </itunes:category>
     <item>
+      <title>Corpo e Estado: o Estado deveria proibir droga e venda de órgãos?</title>
+      <link>https://contraponto.leoborja.com.br/#2026-08-17-corpo-e-estado</link>
+      <guid isPermaLink="false">2026-08-17-corpo-e-estado</guid>
+      <pubDate>Mon, 17 Aug 2026 17:00:00 +0000</pubDate>
+      <description>Esquerda: Sim, deveria travar, e travar de verdade. Nenhum corpo humano entra no mercado, nem em pedaços nem por dependência química. Consentimento dado por quem não tem alternativa não é consentimento, é a forma jurídica da necessidade: as dezenove pessoas recrutadas pela Operação Bisturi em dois mil e três não foram encontradas em bairro de classe média, e no único mercado legal do mundo, o iraniano, o vendedor típico é um homem de quase trinta anos com oito anos de escola. Isso não é um recorte da população, é um recorte da pobreza. Sobre drogas, a divisão é outra e é decisiva: descriminalizar quem usa, imediatamente e sem exceção, e nunca legalizar quem vende, porque um mercado de substância se sustenta no consumidor pesado.
+
+Direita: Não, não deveria travar nada. O corpo é a única propriedade que a pessoa tem antes de qualquer lei existir, e um adulto informado decide sobre ele mesmo quando decide mal. As próprias medidas defendidas contra as drogas são a fonte principal dos males que se lamenta: o crack foi inventado pela proibição, e o Brasil tem quase um milhão de presos com vinte e sete vírgula cinco por cento das incidências penais em crime de droga e quase setenta por cento de presos negros. Do lado do rim, a proibição tem preço contado em caixão: trinta e oito mil brasileiros na fila e mil trezentos e três mortos esperando em seis meses. O Irã é o único país que eliminou a fila, e eliminou com mercado.
+
+Perguntas abertas: Se consentimento sob necessidade não vale para a venda de um rim, por que vale para o contrato de trabalho perigoso e mal pago? Se a repugnância muda de século em século, como Roth mostrou com o juro e a carne de cavalo, ela basta para sustentar uma regra que tem fila de espera do outro lado? Por que os países que proíbem a venda de plasma por princípio dependem justamente do país que paga por ela?</description>
+      <itunes:summary>Esquerda: Sim, deveria travar, e travar de verdade. Nenhum corpo humano entra no mercado, nem em pedaços nem por dependência química. Consentimento dado por quem não tem alternativa não é consentimento, é a forma jurídica da necessidade: as dezenove pessoas recrutadas pela Operação Bisturi em dois mil e três não foram encontradas em bairro de classe média, e no único mercado legal do mundo, o iraniano, o vendedor típico é um homem de quase trinta anos com oito anos de escola. Isso não é um recorte da população, é um recorte da pobreza. Sobre drogas, a divisão é outra e é decisiva: descriminalizar quem usa, imediatamente e sem exceção, e nunca legalizar quem vende, porque um mercado de substância se sustenta no consumidor pesado.
+
+Direita: Não, não deveria travar nada. O corpo é a única propriedade que a pessoa tem antes de qualquer lei existir, e um adulto informado decide sobre ele mesmo quando decide mal. As próprias medidas defendidas contra as drogas são a fonte principal dos males que se lamenta: o crack foi inventado pela proibição, e o Brasil tem quase um milhão de presos com vinte e sete vírgula cinco por cento das incidências penais em crime de droga e quase setenta por cento de presos negros. Do lado do rim, a proibição tem preço contado em caixão: trinta e oito mil brasileiros na fila e mil trezentos e três mortos esperando em seis meses. O Irã é o único país que eliminou a fila, e eliminou com mercado.
+
+Perguntas abertas: Se consentimento sob necessidade não vale para a venda de um rim, por que vale para o contrato de trabalho perigoso e mal pago? Se a repugnância muda de século em século, como Roth mostrou com o juro e a carne de cavalo, ela basta para sustentar uma regra que tem fila de espera do outro lado? Por que os países que proíbem a venda de plasma por princípio dependem justamente do país que paga por ela?</itunes:summary>
+      <itunes:author>Leo Borja</itunes:author>
+      <itunes:duration>37:11</itunes:duration>
+      <itunes:episode>8</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-17-corpo-e-estado/podcast.mp3" length="17855024" type="audio/mpeg"/>
+    </item>
+    <item>
       <title>Jornada de trabalho: a jornada deveria ser reduzida por lei?</title>
       <link>https://contraponto.leoborja.com.br/#2026-08-07-jornada-de-trabalho</link>
       <guid isPermaLink="false">2026-08-07-jornada-de-trabalho</guid>
@@ -46,6 +70,7 @@ Perguntas abertas: Um trabalhador que aceita seis dias por semana porque precisa
       <itunes:author>Leo Borja</itunes:author>
       <itunes:duration>37:45</itunes:duration>
       <itunes:episode>7</itunes:episode>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-07-jornada-de-trabalho/podcast.mp3" length="18121891" type="audio/mpeg"/>
@@ -68,6 +93,7 @@ Perguntas abertas: Por que a melhor reforma administrativa brasileira dos últim
       <itunes:author>Leo Borja</itunes:author>
       <itunes:duration>30:10</itunes:duration>
       <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-06-funcionalismo-parte-2/podcast.mp3" length="14487318" type="audio/mpeg"/>
@@ -90,6 +116,7 @@ Perguntas abertas: Se a avaliação de desempenho vira instrumento de perseguiç
       <itunes:author>Leo Borja</itunes:author>
       <itunes:duration>29:33</itunes:duration>
       <itunes:episode>5</itunes:episode>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-05-funcionalismo/podcast.mp3" length="14187850" type="audio/mpeg"/>
@@ -112,6 +139,7 @@ Perguntas abertas: O problema é a altura da pilha, ou é a escada que foi usada
       <itunes:author>Leo Borja</itunes:author>
       <itunes:duration>36:48</itunes:duration>
       <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-08-03-bilionarios/podcast.mp3" length="17668614" type="audio/mpeg"/>
@@ -134,6 +162,7 @@ Perguntas abertas: Cobrar mensalidade de quem pode no superior público, ou prot
       <itunes:author>Leo Borja</itunes:author>
       <itunes:duration>27:34</itunes:duration>
       <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-07-30-educacao-publica-privada/podcast.mp3" length="13239710" type="audio/mpeg"/>
@@ -156,6 +185,7 @@ Perguntas abertas: A paz salvadorenha sobrevive ao dia em que a popularidade do 
       <itunes:author>Leo Borja</itunes:author>
       <itunes:duration>27:42</itunes:duration>
       <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-07-29-modelo-bukele/podcast.mp3" length="13303239" type="audio/mpeg"/>
@@ -178,6 +208,7 @@ Perguntas abertas: Um programa generoso, nacional e PERMANENTE muda o comportame
       <itunes:author>Leo Borja</itunes:author>
       <itunes:duration>33:09</itunes:duration>
       <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <enclosure url="https://contraponto.leoborja.com.br/episodes/2026-07-22-renda-basica-universal/podcast.mp3" length="15919664" type="audio/mpeg"/>

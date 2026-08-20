@@ -41,6 +41,11 @@
   .ep-info h2{font-size:16.5px;line-height:1.3}
   .ep-meta{color:var(--muted);font-size:12.5px;margin-top:3px}
   .ep-resume{color:var(--consenso);font-size:12px;margin-top:2px}
+  /* badge de série (só aparece em episódios que declaram "serie" no debate_map) */
+  .ep-serie{display:inline-block;font-size:10.5px;font-weight:700;text-transform:uppercase;
+            letter-spacing:.6px;color:var(--consenso);border:1px solid var(--consenso);
+            border-radius:999px;padding:2px 8px;margin-bottom:5px;opacity:.85}
+  .ep-projeto{color:var(--txt);font-size:12.5px;margin-top:4px;opacity:.8}
   .ep-toggle{flex:0 0 auto;background:none;border:none;color:var(--muted);font-size:13px;cursor:pointer;padding:8px}
   .ep-body{display:none;padding:0 16px 16px;border-top:1px solid var(--linha)}
   .ep.open .ep-body{display:block}
@@ -134,8 +139,10 @@ function card(e){
     <div class="ep-row">
       <button class="ep-play" data-slug="${e.slug}" aria-label="tocar">▶</button>
       <div class="ep-info" data-slug="${e.slug}">
+        ${e.serie && e.serie.nome ? `<span class="ep-serie">${esc(e.serie.nome)}</span>` : ''}
         <h2>${esc(e.titulo)}</h2>
         <div class="ep-meta">${fmtData(e.data)} · ${fmt(e.duracao_seg)}</div>
+        ${e.serie && e.serie.projeto ? `<div class="ep-projeto">📄 ${esc(e.serie.projeto)}${e.serie.situacao ? ' · ' + esc(e.serie.situacao) : ''}</div>` : ''}
         ${resume}
       </div>
       <button class="ep-toggle" data-slug="${e.slug}">detalhes</button>

@@ -55,7 +55,8 @@ Cada personagem tem UM eixo em que não concede nada e defende a versão forte d
   - NUNCA travessão (—) | NUNCA reticências (...) | enumerações de no máx. 2 itens por vírgula (listas longas viram frase corrida com "e")
   - `audio.py:normalizar_tts()` limpa —/... como rede de segurança, mas enumeração é estilo: escrever certo na fonte
   - Números por extenso ("três vírgula dois pontos percentuais")
-- **Alvo**: 4.200-4.800 palavras ≈ 27-31 min, **mas é referência e não teto** (feedback do Leo em 10/ago). Passar disso é aceitável se cada bloco adicionar argumento novo; o que não é aceitável é repetir. Eps. 1 a 7 ficaram entre 26 e 38 min e o Leo nunca reclamou de duração — reclamou de falta de casos concretos (ep. 5) e de convergência (ep. 4). **Calibração real medida**: 147-160 wpm (ep. 3: 4.065 palavras = 27:34 → 147 wpm; ep. 5: 4.609 = 29:33 → 156 wpm; ep. 4: 5.873 = 36:48 → 160 wpm). O `settings.yaml` assume 165, que subestima a duração — usar a faixa medida para estimar
+- **Alvo**: 4.200-4.800 palavras ≈ 27-31 min, **mas é referência e não teto** (feedback do Leo em 10/ago).
+  - ⚠️ **DIMENSIONAR O ORÇAMENTO PELO NÚMERO DE DOMÍNIOS** (lição do ep. 8): o ep. 7 ensinou a *fixar* orçamento no curriculum e não ensinou a *calibrá-lo*. No ep. 8 eu fixei 4.700 e entreguei 5.729, doze por cento acima, porque era um episódio de **dois domínios** (droga e órgão), cada um com evidência, casos e bloco brasileiro próprios. Não havia gordura para cortar: medi n-gramas e os únicos repetidos eram datas e bookends intencionais. **Regra**: ~4.700 palavras para tema único, ~5.800 para tema duplo. Estourar sem prolixidade é erro de calibragem, não de escrita, e o desconto na nota é pela disciplina quebrada, não pelos minutos Passar disso é aceitável se cada bloco adicionar argumento novo; o que não é aceitável é repetir. Eps. 1 a 7 ficaram entre 26 e 38 min e o Leo nunca reclamou de duração — reclamou de falta de casos concretos (ep. 5) e de convergência (ep. 4). **Calibração real medida**: 147-160 wpm (ep. 3: 4.065 palavras = 27:34 → 147 wpm; ep. 5: 4.609 = 29:33 → 156 wpm; ep. 4: 5.873 = 36:48 → 160 wpm; **ep. 8: 5.899 = 37:11 → 158,6 wpm**). Episódios longos ficam na ponta alta da faixa, então usar **158 wpm** para estimar episódio acima de 5.000 palavras e 150 para os curtos. O `settings.yaml` assume 165, que subestima a duração — usar a faixa medida para estimar
 
 ### 3.5 Revisor v3 (reescrito em 5/ago após o Leo pedir mais autocrítica)
 
@@ -115,12 +116,29 @@ import json, re
 t=json.load(open('output/<slug>/script.json'))['turnos']
 for i,x in enumerate(t):
     for s in re.split(r'(?<=[.!?])\s+', x['text']):
-        m=re.search(r'((?:[^,.;]+,\s*){2,}[^,.;]+\s+e\s+[^,.;]+)', s)
+        m=re.search(r'((?:[^,.;]+,\s*){1,}[^,.;]+\s+e\s+[^,.;]+)', s)
         if m:
             itens=[p for p in re.split(r',\s*|\s+e\s+', m.group(1)) if p.strip()]
             if len(itens)>=3 and all(len(it.split())<=6 for it in itens):
-                print(f"[{i}] {m.group(1)[:90]}")
+                print(f"[{i}] ({len(itens)} itens) {m.group(1)[:90]}")
 ```
+
+⚠️ **CORREÇÃO de 17/ago (ep. 8): o quantificador era `{2,}` e estava ERRADO.** `{2,}` exige
+duas vírgulas, então o detector só pegava listas de **4+ itens** e deixava passar toda
+enumeração de 3 ("A, B e C"), que é exatamente a forma mais comum. Trocado para `{1,}`.
+No ep. 8 a correção achou **10 violações reais** que a versão antiga não achava — ex.:
+*"distribuir seringa, abrir sala de consumo supervisionado e tratar dependência como doença"*.
+
+**A lição é mais séria que o regex.** A regra de ouro diz que item sem comando vira OK
+automático. O ep. 8 mostra o degrau seguinte: **item COM comando errado vira OK automático
+com aparência de rigor**, que é pior, porque o número falso encerra a investigação. Sempre
+que um detector retornar zero ou só falsos positivos, testar se ele consegue achar um caso
+que você plantou de propósito. Um detector nunca validado é uma opinião com sintaxe.
+
+**Falsos positivos legítimos** (verificar um a um, nunca descartar o lote — lição do ep. 7):
+números e datas por extenso ("Recife, dois mil e três"), apostos ("Quem decide, no hospital,
+é a sua família") e orações coordenadas. No ep. 8 sobraram 7 candidatos, todos falso positivo,
+conferidos individualmente.
 
 **Consequência geral**: cada item do checklist abaixo precisa de um comando que retorne número, não de um julgamento meu. Onde não houver comando, presuma que o item nunca foi verificado.
 
@@ -198,6 +216,38 @@ Modelo `eleven_multilingual_v2`, PT-BR.
 6. **Funcionalismo, parte 2: o que de fato funciona** (30:10, 6/ago) — complemento do ep. 5 para pagar a dívida de acionabilidade (nota 4,0 no revisor v3). Formato novo: **julgamento de casos** em vez de eixos temáticos, cada caso respondendo funcionou/por quê/dá para copiar. Sobral (1.407º → 1º do Brasil sem tirar estabilidade), PAIC/Ceará (Lei 14.026/2007, 184 municípios), gov.br (R$ 38 bi e 150 mi de horas/ano, zero demissões), reforma tributária, OSS de SP (TCE achou administração direta mais barata), Nova Zelândia (lei de 1988 revogada em 2020), ENAP (nos 6 casos examinados ninguém avalia produtividade). Abre se corrigindo: a comparação OCDE do ep. 5 não era homogênea. **Nota v3: 8,5**
 5. **Funcionalismo público: estabilidade é proteção ou privilégio?** (29:33, 5/ago) — 1º episódio sob a Regra Zero; cold open do assassinato de Garfield por um caçador de emprego público (1881) → Pendleton Act; Brasil tem 12,1% da força de trabalho no setor público vs 20,8% OCDE mas gasta 13,5% do PIB vs 9,3% (Estado em formato de taça); EC 19/1998 já permite demitir por desempenho e a lei complementar nunca veio (28 anos); déficit militar de R$ 159 mil/beneficiário vs R$ 9,4 mil no INSS; vitaliciedade ≠ estabilidade
 7. **Jornada de trabalho: a jornada deveria ser reduzida por lei?** (37:45, 7/ago) — cold open da folga que cai em dia útil (folga na quarta, escola do filho aberta, ninguém para conviver: não aparece em estudo de PIB nenhum). Atualidade: a **PEC 221/19** (fim da escala 6x1) foi aprovada na Câmara em dois turnos por **461 a 19 em 27/mai/2026** e está no Senado passando por comissões (já passou pela CCJ); transição prevista de 44→42h em 60 dias e 42→40h em 14 meses, sem redução de salário. O **estudo do FGV IBRE**, o mais citado contra a proposta, **declara por escrito que mantém "produtividade por hora e nível de emprego constantes"** — ou seja, assume que o mecanismo central defendido pelo outro lado quase não opera (IPEA calcula 1% de aumento de custo operacional). O **INSEE** achou **queda de 3,7% de produtividade** nas empresas francesas que adotaram as 35h, único caso de lei nacional comparável (Tirole chama de equívoco; França flexibilizou em 2003). O paper de **Cuello (JRC, Comissão Europeia)** demole o desenho dos pilotos: **todos os do setor privado analisados usam comparação antes-e-depois** (uma única exceção), método de alto risco porque supõe que nada mais mudou numa economia saindo de pandemia, e **a tentativa de montar grupo de comparação não entrou no relatório final** porque "não pareceu funcionar"; o piloto ainda acha efeito significativo em custo de creche, que não tem relação com semana de quatro dias. Contraponto de método pela esquerda: a Alemanha **teve** grupo de controle (7,7 vs 6,8, 73% mantiveram). Fecho onde os dois concordam: a **NR-1** (fiscalização de risco psicossocial em vigor desde este ano) é o que já vale hoje sem PEC nenhuma, porque cobra da empresa o resultado (trabalhador não adoecer) sem dizer quantas horas usar. **Nota v3: 9,0, a maior da série** (factual 9,5, profundidade 9,5, acionabilidade 9,5, equilíbrio e ouvido 9,0). Lição do processo: quatro rodadas de melhoria subiram o factual de 8,0 para 9,5 sem mover a nota final, porque cada inserção empurrou a duração e derrubou o ouvido (efeito cobertor curto) → fixar orçamento de palavras no curriculum
+
+## Séries
+
+**Série principal** (temporada 1): tema em disputa proposto pelo Leo, Marx × Friedman.
+
+**Contraponto Legislativo** (temporada 2, criada em 17/ago/2026): o episódio parte de **um
+projeto de lei ou emenda real, em tramitação** — municipal, estadual, federal, Brasil ou
+fora. Sócrates explica o que o texto faz, o que alega resolver e em que pé está o trâmite;
+os dois debatem se aquilo deveria virar lei. **Especificação completa em `SERIE-LEGISLATIVO.md`**
+— tem seis riscos novos, artefato `projeto.json` obrigatório e um sétimo eixo de revisão
+(fidelidade ao texto). O ep. 7 (PEC 221/19) foi o protótipo acidental e deu 9,0.
+
+### Feed: mesmo feed, e por quê
+Séries convivem no mesmo RSS como **temporadas**. O que cada app de fato faz (verificado
+em 17/ago/2026, não presumido):
+- **Apple Podcasts**: agrupa por `<itunes:season>` com `<itunes:type>episodic</itunes:type>`
+  ("Episodic with Seasons"). Só exibe a temporada **a partir da segunda** — ou seja, aparece
+  exatamente quando o primeiro Legislativo sair. Mostra o **número**, não o nome
+- **Spotify**: **não agrupa por temporada.** Lê a tag e ignora o agrupamento, exibindo tudo
+  em ordem cronológica inversa. Não existe "duas séries no mesmo canal" no Spotify hoje
+- **Apps Podcasting 2.0** (Fountain, Podverse, Pocket Casts): leem `<podcast:season name>`
+  e exibem o **nome** da temporada
+
+Como o Spotify é o canal principal e não agrupa, **o único diferenciador que funciona em
+todo lugar é o prefixo no título** ("Contraponto Legislativo: ..."). O `publish.py` faz os
+três ao mesmo tempo: prefixo, `itunes:season` e `podcast:season name`. Feed separado foi
+descartado: exigiria nova submissão ao Spotify e à Apple e dividiria uma base de assinantes
+que tem 10 dias de vida.
+
+⚠️ A Apple pede para **não** repetir número de temporada/episódio no título — por isso o
+prefixo é só o nome da série, sem "#1". A numeração vive em `itunes:episode`, que
+**reinicia por temporada** (`_numeracao_por_serie` no `publish.py`).
 
 ## Backlog de temas (Leo escolhe)
 Legalizar drogas (Portugal vs Oregon) · Controle de aluguel e crise da moradia · Regular a IA (AI Act vs EUA vs PL 2338) · Nuclear na transição energética · Privatizar ou não (Correios/Sabesp/Petrobras) · **Medição e estatística política** (sobra do ep. 4: Pritchett, Reddy-Pogge, Ravallion, medidas FGT, MPI, Dinamarca×Paquistão — pesquisa já feita em `output/2026-08-03-bilionarios/curriculum.json`)

@@ -83,16 +83,43 @@ def _pub_date(data_iso: str, ordem: int) -> str:
     return format_datetime(d)
 
 
+def _numeracao_por_serie(episodes: list[dict]) -> list[tuple[int, int]]:
+    """Devolve (temporada, numero_na_temporada) para cada episódio.
+
+    A Apple espera <itunes:episode> reiniciando dentro de cada <itunes:season>, então
+    a série principal é a temporada 1 e cada série nova ganha a sua. `episodes` vem do
+    mais novo para o mais antigo; a numeração conta do mais antigo para o mais novo.
+    """
+    contagem: dict[int, int] = {}
+    fora = []
+    for e in reversed(episodes):
+        temporada = (e.get("serie") or {}).get("numero", 1)
+        contagem[temporada] = contagem.get(temporada, 0) + 1
+        fora.append((temporada, contagem[temporada]))
+    return list(reversed(fora))
+
+
 def _gerar_feed(episodes: list[dict]) -> None:
     """Monta o RSS 2.0 com as extensões itunes exigidas pelos agregadores."""
     itens = []
-    # episodes vem do mais novo para o mais antigo; a ordem inverte para o pubDate
-    total = len(episodes)
+    numeracao = _numeracao_por_serie(episodes)
     for i, e in enumerate(episodes):
         url_audio = f"{SITE_URL}/{e['audio']}"
         mp3 = DOCS / e["audio"]
         tamanho = mp3.stat().st_size if mp3.exists() else 0
-        numero = total - i  # ep. mais antigo = 1
+        temporada, numero = numeracao[i]
+        serie = e.get("serie") or {}
+        # A Apple pede para NÃO repetir número de temporada/episódio no título, mas o
+        # nome da série entra como prefixo porque é o único diferenciador que o Spotify
+        # de fato mostra (ele ignora agrupamento por temporada).
+        titulo_feed = f"{serie['nome']}: {e['titulo']}" if serie.get("nome") else e["titulo"]
+        # <itunes:season> é o que faz a Apple agrupar (e só aparece a partir da 2ª
+        # temporada). Vai em TODOS os episódios, inclusive os da série principal, senão
+        # a temporada 1 fica sem marcação e o agrupamento sai pela metade.
+        # <podcast:season name> dá temporada NOMEADA, que os apps Podcasting 2.0 exibem.
+        tag_serie = f"\n      <itunes:season>{temporada}</itunes:season>"
+        if serie.get("nome"):
+            tag_serie += f'\n      <podcast:season name="{escape(serie["nome"])}">{temporada}</podcast:season>'
 
         resumo_partes = []
         if e.get("tese_esquerda"):
@@ -102,18 +129,23 @@ def _gerar_feed(episodes: list[dict]) -> None:
         if e.get("perguntas_abertas"):
             perguntas = " ".join(f"{p}" for p in e["perguntas_abertas"][:3])
             resumo_partes.append(f"Perguntas abertas: {perguntas}")
+        if serie.get("projeto"):
+            cabecalho = f"Projeto em debate: {serie['projeto']}"
+            if serie.get("situacao"):
+                cabecalho += f" ({serie['situacao']})"
+            resumo_partes.insert(0, cabecalho)
         resumo = "\n\n".join(resumo_partes) or e.get("tema", "")
 
         itens.append(f"""    <item>
-      <title>{escape(e['titulo'])}</title>
+      <title>{escape(titulo_feed)}</title>
       <link>{SITE_URL}/#{escape(e['slug'])}</link>
       <guid isPermaLink="false">{escape(e['slug'])}</guid>
-      <pubDate>{_pub_date(e.get('data', ''), numero)}</pubDate>
+      <pubDate>{_pub_date(e.get('data', ''), len(episodes) - i)}</pubDate>
       <description>{escape(resumo)}</description>
       <itunes:summary>{escape(resumo)}</itunes:summary>
       <itunes:author>{escape(AUTOR)}</itunes:author>
       <itunes:duration>{_hhmmss(e.get('duracao_seg', 0))}</itunes:duration>
-      <itunes:episode>{numero}</itunes:episode>
+      <itunes:episode>{numero}</itunes:episode>{tag_serie}
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <enclosure url="{escape(url_audio)}" length="{tamanho}" type="audio/mpeg"/>
@@ -124,6 +156,7 @@ def _gerar_feed(episodes: list[dict]) -> None:
 <rss version="2.0"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:podcast="https://podcastindex.org/namespace/1.0"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{escape(PODCAST_NOME)}</title>
@@ -187,6 +220,8 @@ def main() -> None:
             "consenso": m.get("consenso", []),
             "perguntas_abertas": m.get("perguntas_abertas", []),
             "fontes": m.get("fontes_chave", []),
+            # Opcional. Série principal não tem: sai como temporada 1 sem badge, igual a antes.
+            "serie": m.get("serie"),
         })
 
     DOCS.mkdir(exist_ok=True)

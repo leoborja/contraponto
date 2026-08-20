@@ -2,6 +2,127 @@
   "podcast": "Contraponto",
   "episodes": [
     {
+      "slug": "2026-08-17-corpo-e-estado",
+      "titulo": "Corpo e Estado: o Estado deveria proibir droga e venda de órgãos?",
+      "tema": "Corpo e Estado: o Estado deveria travar o que você faz com o próprio corpo?",
+      "data": "2026-08-17",
+      "duracao_seg": 2231,
+      "audio": "episodes/2026-08-17-corpo-e-estado/podcast.mp3",
+      "tese_esquerda": "Sim, deveria travar, e travar de verdade. Nenhum corpo humano entra no mercado, nem em pedaços nem por dependência química. Consentimento dado por quem não tem alternativa não é consentimento, é a forma jurídica da necessidade: as dezenove pessoas recrutadas pela Operação Bisturi em dois mil e três não foram encontradas em bairro de classe média, e no único mercado legal do mundo, o iraniano, o vendedor típico é um homem de quase trinta anos com oito anos de escola. Isso não é um recorte da população, é um recorte da pobreza. Sobre drogas, a divisão é outra e é decisiva: descriminalizar quem usa, imediatamente e sem exceção, e nunca legalizar quem vende, porque um mercado de substância se sustenta no consumidor pesado.",
+      "tese_direita": "Não, não deveria travar nada. O corpo é a única propriedade que a pessoa tem antes de qualquer lei existir, e um adulto informado decide sobre ele mesmo quando decide mal. As próprias medidas defendidas contra as drogas são a fonte principal dos males que se lamenta: o crack foi inventado pela proibição, e o Brasil tem quase um milhão de presos com vinte e sete vírgula cinco por cento das incidências penais em crime de droga e quase setenta por cento de presos negros. Do lado do rim, a proibição tem preço contado em caixão: trinta e oito mil brasileiros na fila e mil trezentos e três mortos esperando em seis meses. O Irã é o único país que eliminou a fila, e eliminou com mercado.",
+      "consenso": [
+        "Prender usuário é o pior desenho disponível, e os dois dizem isso com todas as letras, cada um pelo próprio caminho",
+        "Descriminalizar quem usa e legalizar quem vende são duas decisões diferentes, e confundir as duas é o erro central do debate brasileiro",
+        "Não existe hoje evidência sobre o bem-estar de longo prazo de quem vende um rim num mercado legal, porque o único bom estudo do único mercado legal declarou por escrito que não mediu isso",
+        "O gargalo brasileiro de transplante não é a lei: é a recusa familiar de quarenta e cinco por cento e a conversão de vinte e sete por cento das notificações",
+        "No Brasil não existe cadastro de doador, documento e cartório não valem, e a conversa com a família é o ato que de fato decide",
+        "Comparar mortalidade por droga entre países é frágil, porque capacidade forense e critério de registro variam de fronteira em fronteira",
+        "A Lei de Drogas de dois mil e seis não fixou quantidade e entregou ao juiz a distinção entre usuário e traficante, e é daí que vem a seletividade na porta da delegacia"
+      ],
+      "perguntas_abertas": [
+        "Se consentimento sob necessidade não vale para a venda de um rim, por que vale para o contrato de trabalho perigoso e mal pago?",
+        "Se a repugnância muda de século em século, como Roth mostrou com o juro e a carne de cavalo, ela basta para sustentar uma regra que tem fila de espera do outro lado?",
+        "Por que os países que proíbem a venda de plasma por princípio dependem justamente do país que paga por ela?",
+        "Se a Suécia proíbe mais e tem mortalidade alta, e Portugal proíbe menos e tem prevalência baixa, o que exatamente a lei controla?",
+        "Os dois defendem a autonomia de quem já é dependente químico e nenhum dos dois explica direito o que significa consentir sob abstinência. É o mesmo problema, invertido, nos dois lados."
+      ],
+      "fontes": [
+        {
+          "titulo": "Milton Friedman, carta aberta a Bill Bennett, Wall Street Journal, 7/set/1989, com a resposta de Bennett de 19/set (texto integral)",
+          "url": "https://www.stephenhicks.org/wp-content/uploads/2016/12/Bennett-vs-Friedman-Drug-War-WSJ.pdf"
+        },
+        {
+          "titulo": "Portland State University: relatório final do projeto sobre os impactos da Measure 110 do Oregon",
+          "url": "https://www.pdx.edu/news/psu-researchers-release-final-report-landmark-project-exploring-impacts-measure-110"
+        },
+        {
+          "titulo": "Moeindarbari e Feizi, Kidneys for Sale: Empirical Evidence From Iran, Transplant International, 2022 (declara não ter medido arrependimento nem consequência de longo prazo)",
+          "url": "https://www.frontierspartnerships.org/journals/transplant-international/articles/10.3389/ti.2022.10178/full"
+        },
+        {
+          "titulo": "Comentário publicado na mesma revista sobre o estudo do modelo iraniano (favorável, com ressalvas estruturais)",
+          "url": "https://www.frontierspartnerships.org/journals/transplant-international/articles/10.3389/ti.2022.10530/full"
+        },
+        {
+          "titulo": "Goyal, Mehta, Schneiderman e Sehgal, Economic and health consequences of selling a kidney in India, JAMA, 2002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12350189/"
+        },
+        {
+          "titulo": "Becker e Elias, Introducing Incentives in the Market for Live and Cadaveric Organ Donations, Journal of Economic Perspectives, 2007",
+          "url": "https://www.aeaweb.org/articles?id=10.1257%2Fjep.21.3.3"
+        },
+        {
+          "titulo": "Alvin Roth, Repugnance as a Constraint on Markets, Journal of Economic Perspectives, 2007",
+          "url": "https://web.stanford.edu/~alroth/papers/Repugnance.pdf"
+        },
+        {
+          "titulo": "Debra Satz, Why Some Things Should Not Be for Sale: The Moral Limits of Markets, Oxford, 2010",
+          "url": "https://global.oup.com/academic/product/why-some-things-should-not-be-for-sale-9780195311594"
+        },
+        {
+          "titulo": "STF fixa 40 gramas para diferenciar uso e tráfico e fixa tese sobre maconha (Tema 506, jun/2024)",
+          "url": "https://noticias.stf.jus.br/postsnoticias/stf-define-40-gramas-de-maconha-como-criterio-para-diferenciar-usuario-de-traficante/"
+        },
+        {
+          "titulo": "Senado aprova a PEC 45/2023 sobre drogas por 52 a 9 e envia à Câmara",
+          "url": "https://www12.senado.leg.br/noticias/materias/2024/04/16/senado-aprova-pec-sobre-drogas-que-segue-para-a-camara"
+        },
+        {
+          "titulo": "Agência Pública: após meio milhão de transplantes em 25 anos, Brasil tem 45% de recusa em doação de órgãos",
+          "url": "https://apublica.org/2026/01/doacao-de-orgaos-apos-25-anos-brasil-ainda-enfrenta-alta-recusa/"
+        },
+        {
+          "titulo": "Ministério da Saúde: campanha de doação de órgãos e a regra de que quem decide é a família",
+          "url": "https://www.gov.br/saude/pt-br/campanhas-da-saude/2025/doacao-de-orgaos"
+        },
+        {
+          "titulo": "Operação Bisturi e a CPI do Tráfico de Órgãos: 19 brasileiros levados a Durban",
+          "url": "https://www.camara.leg.br/radio/programas/292927-especial-transplantes-5-reelembre-os-trabalhos-da-cpi-do-trafico-de-orgaos-0746/"
+        },
+        {
+          "titulo": "Monitor Cannabis (Uruguai): balanço de resultados e desafios da legalização",
+          "url": "https://monitorcannabis.uy/legalizacion-del-cannabis-en-uruguay-un-balance-de-resultados-y-desafios/"
+        },
+        {
+          "titulo": "SICAD/ICAD: V Inquérito Nacional ao Consumo de Substâncias Psicoativas, Portugal 2022",
+          "url": "https://www.icad.pt/NewsArticle/Article/25"
+        },
+        {
+          "titulo": "EU-GEI, Lancet Psychiatry, 2019: contribuição do uso de cannabis para a incidência de transtorno psicótico na Europa",
+          "url": "https://www.thelancet.com/article/S2215-0366(19)30048-3/fulltext"
+        },
+        {
+          "titulo": "Lancet Psychiatry: High-potency cannabis and incident psychosis, correcting the causal assumption",
+          "url": "https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(19)30175-0/fulltext"
+        },
+        {
+          "titulo": "Transform: a política de drogas da Suécia, uma abordagem repressiva que aumenta o dano (fonte de ADVOCACIA)",
+          "url": "https://transformdrugs.org/blog/drug-policy-in-sweden-a-repressive-approach-that-increases-harm"
+        },
+        {
+          "titulo": "End Kidney Deaths Act, H.R. 2687, 119º Congresso (texto do projeto)",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/2687/text"
+        },
+        {
+          "titulo": "The Conversation: PEC do Plasma e o risco à hemoterapia no Brasil",
+          "url": "https://theconversation.com/pec-do-plasma-por-que-a-permissao-da-venda-de-plasma-pode-prejudicar-hemoterapia-no-brasil-214909"
+        },
+        {
+          "titulo": "Marx, O Capital, Livro I, cap. 4: a compra e venda da força de trabalho (o trabalhador livre em duplo sentido)",
+          "url": "https://www.marxists.org/portugues/marx/1867/capital/livro1/cap04/03.htm"
+        },
+        {
+          "titulo": "SENAPPEN: levantamento de informações penitenciárias, população prisional brasileira",
+          "url": "https://www.gov.br/senappen/pt-br/assuntos/noticias/senappen-divulga-levantamento-de-informacoes-penitenciarias-referente-ao-segundo-semestre-de-2024"
+        },
+        {
+          "titulo": "Modelo espanhol de doação: o resultado vem do coordenador de transplante, não da lei de consentimento presumido",
+          "url": "https://hospitalhealthcare.com/news/spanish-model-of-organ-donation-leads-to-boost-in-transplantation/"
+        }
+      ],
+      "serie": null
+    },
+    {
       "slug": "2026-08-07-jornada-de-trabalho",
       "titulo": "Jornada de trabalho: a jornada deveria ser reduzida por lei?",
       "tema": "Jornada de trabalho: a jornada deveria ser reduzida por lei?",
@@ -94,7 +215,8 @@
           "titulo": "Islândia: o maior piloto do mundo entre 2015 e 2019, e os 86% de hoje",
           "url": "https://www.xataka.com/empresas-y-economia/islandia-tiene-semana-laboral-cuatro-dias-2019-siete-anos-despues-cumple-todas-promesas-gen-z"
         }
-      ]
+      ],
+      "serie": null
     },
     {
       "slug": "2026-08-06-funcionalismo-parte-2",
@@ -189,7 +311,8 @@
           "titulo": "FENACON — 1.501 horas por ano para calcular e pagar tributos no Brasil",
           "url": "https://fenacon.org.br/noticias/brasil-lidera-ranking-de-empresas-que-gastam-mais-tempo-para-calcular-e-pagar-imposto/"
         }
-      ]
+      ],
+      "serie": null
     },
     {
       "slug": "2026-08-05-funcionalismo",
@@ -300,7 +423,8 @@
           "titulo": "MEC — piso salarial do magistério 2025: R$ 4.867,77",
           "url": "https://www.gov.br/mec/pt-br/assuntos/noticias/2025/janeiro/piso-salarial-dos-professores-tem-reajuste-acima-da-inflacao"
         }
-      ]
+      ],
+      "serie": null
     },
     {
       "slug": "2026-08-03-bilionarios",
@@ -410,7 +534,8 @@
           "titulo": "OPHI / UNDP — Índice de Pobreza Multidimensional Global 2025",
           "url": "https://ophi.org.uk/global-mpi/2025"
         }
-      ]
+      ],
+      "serie": null
     },
     {
       "slug": "2026-07-30-educacao-publica-privada",
@@ -486,7 +611,8 @@
           "titulo": "Banco Mundial — lições da reforma polonesa",
           "url": "https://documents1.worldbank.org/curated/en/711041468093564484/pdf/622500BRI0Succ0Box0361475B00PUBLIC0.pdf"
         }
-      ]
+      ],
+      "serie": null
     },
     {
       "slug": "2026-07-29-modelo-bukele",
@@ -558,7 +684,8 @@
           "titulo": "Migalhas — limites legais dos ofendículos",
           "url": "https://www.migalhas.com.br/depeso/241716/limites-legais-dos-ofendiculos"
         }
-      ]
+      ],
+      "serie": null
     },
     {
       "slug": "2026-07-22-renda-basica-universal",
@@ -630,7 +757,8 @@
           "titulo": "Forbes — resultados do estudo OpenResearch (Sam Altman)",
           "url": "https://www.forbes.com/sites/sarahemerson/2024/07/22/openai-founder-sam-altman-gave-thousands-of-people-free-money-heres-what-happened/"
         }
-      ]
+      ],
+      "serie": null
     }
   ]
 }
